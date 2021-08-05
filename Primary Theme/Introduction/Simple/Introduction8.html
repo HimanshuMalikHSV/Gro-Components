@@ -51,7 +51,6 @@
             box-sizing: border-box;
         }
 
-       
         body{
               --theme_primary : #2F80ED;
               --theme_light : #F9FAFB;
@@ -59,6 +58,12 @@
               --theme_text_secondary : #4F4F4F;
               --theme_text_tertiary : #B0B0B0;
               --font_family : Open Sans, sans-serif ;
+            }
+            .btn_hover:hover{
+              color: #2F80ED;
+              background-color: white !important; 
+              filter: brightness();
+              border-color: #2F80ED !important;
             }
     </style>
 <section>
@@ -76,7 +81,7 @@
             <p class="grpd-p grpd-pt-32 grpd-text-color-text_secondary">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
             </p>
             <div class="grpd-py-32">
-              <a href="#" class="grpd-button-primary-theme_primary grpd-py-12 grpd-px-18"><span class="grpd-font-weight-500">Start my free trial</span></a>
+              <a href="#" class="grpd-button-primary-theme_primary grpd-border grpd-border-color-theme_primary btn_hover grpd-py-12 grpd-px-18"><span class="grpd-font-weight-500">Start my free trial</span></a>
             </div>
           </div>
         </div>

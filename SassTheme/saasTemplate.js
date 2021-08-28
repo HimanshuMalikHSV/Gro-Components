@@ -1,150 +1,33 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Page title</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="description" content="Description">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link href="https://rapidtech.s3.amazonaws.com/assets/framework_theme.css" rel="stylesheet">
-    <link href="https://rapidtech.s3.amazonaws.com/assets/framework.css" rel="stylesheet">
-    <link href="https://rapidtech.s3.amazonaws.com/assets/plugin_theme.css" rel="stylesheet">
-    <link href="https://rapidtech.s3.amazonaws.com/assets/framework1.css" rel="stylesheet">
-
-    <!-- <link rel="stylesheet" href="https://platform-staging.grorapid.com/assets/css/portal/font-awesome-4.7.0/css/font-awesome.min.css"> -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
-
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
+export default function(editor, opt = {}) {
+  const c = opt;
+  let bm = editor.BlockManager;
+  const cats = c.blockCategories;
+  const blocks = c.blocks;
+  const labels = c.labels;
+  if (cats.saasTemplate) {
+    blocks.saaTemplate_1 &&
+      bm.add('saaTemplate_1', {
+        label:
+          "<img src='https://rapidtech.s3.amazonaws.com/assets/p_assets/internalTemplates/Saas.jpg' />",
+        category: labels.categorySaasTemplate,
+        content: `
+        <style>
         body {
-            margin: 0;
+            --theme_primary: #2f80ed;
+            --theme_light: #f5f9fe;
+            --theme_text_primary: #333333;
+            --theme_text_secondary: #828282;
+            --font_family: Lexend, sans-serif;
         }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin-top: 0px;
-            margin-right: 0px;
-            margin-bottom: 0px;
-            margin-left: 0px;
-        }
-    </style>
-   
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158951641-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-        gtag("config", "UA-158951641-2");
-    </script>
-</head>
-
-<body>
-  <style>
-    * {
-        box-sizing: border-box;
-    }
-
-    .icon1_bg {
-  background: #F87789;
-}
-
-.icon2_bg {
-  background: #6ECAC9;
-}
-
-.icon3_bg {
-  background: #FF9655;
-}
-
-.grpd-border-color-white {
-border-color: var(--white); }
-.grpd-text-color-white {
-color: var(--white); }
-.grpd-background-color-white {
-background-color: var(--white); }
-.grpd-border-color-black {
-border-color: var(--black); }
-.grpd-text-color-black {
-color: var(--black); }
-.grpd-background-color-black {
-background-color: var(--black); }
-
-.grpd-border-color-template1_color_1 {
-border-color: var(--template1_color_1); }
-.grpd-text-color-template1_color_1 {
-color: var(--template1_color_1); }
-.grpd-background-color-template1_color_1 {
-background-color: var(--template1_color_1); }
-.grpd-border-color-template1_color_2 {
-border-color: var(--template1_color_2); }
-.grpd-text-color-template1_color_2 {
-color: var(--template1_color_2); }
-.grpd-background-color-template1_color_2 {
-background-color: var(--template1_color_2); }
-.grpd-border-color-template1_color_3 {
-border-color: var(--template1_color_3); }
-.grpd-text-color-template1_color_3 {
-color: var(--template1_color_3); }
-.grpd-background-color-template1_color_3 {
-background-color: var(--template1_color_3); }
-.grpd-border-color-template1_color_4 {
-border-color: var(--template1_color_4); }
-.grpd-text-color-template1_color_4 {
-color: var(--template1_color_4); }
-.grpd-background-color-template1_color_4 {
-background-color: var(--template1_color_4); }
-
-
-body {
-          --template1_color_1: #2f80ed;
-          --template1_color_2: #f5f9fe;
-          --template1_color_3: #333333;
-          --template1_color_4: #828282;
-          --font_family: Lexend, sans-serif;
-      }
-
-      .btn_primary{
-        background-color: #A251FF ;
-        color: #FFFFFF;
-        transition:500ms;
-      }
-      .btn_secondary{
-        color: #A251FF ;
-        background-color: #FFFFFF;
-        transition:500ms;
-      }
-      .btn_primary:hover{
-        color: #f7f0f0 ;
-        background-color: #8835e7;
-        transition:500ms;
-      }
-      .btn_secondary:hover{
-        background-color: #e1fbff;
-        color: #7a2fcf;
-        transition:500ms;
-      }
-     
-  
-</style>
-    <section class="grpd-wrapper saas-template-background " id="saaTemplate_section_1">
-        <div class="grpd-container-xxl grpd-mx-auto grpd-px-0">
+      </style>
+        <section class="grpd-wrapper saas-template-background " id="saaTemplate_section_1">
+        <div class="grpd-container-xl grpd-mx-auto grpd-px-0">
           <div class="grpd-row">
               <div class="grpd-col-md-12">
                   <div class="grpd-display-flex grpd-justify-content-center grpd-align-items-center grpd-flex-column grpd-pt-lg-160 grpd-pb-192 grpd-px-16 grpd-text-align-center" >
                       <h3 class="grpd-text-color-white grpd-px-lg-100 grpd-py-16 grpd-h1">Launch Your App with Confidance & Creativity</h3>
                       <p class="grpd-text-color-white  grpd-py-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.</p>
-                      <a href="#" class=" btn_secondary grpd-py-12 grpd-px-32 grpd-border grpd-border-color-white   grpd-border-radius-4 grpd-font-weight-500 grpd-text-align-center">Get Started</a>
+                      <a href="#" class="grpd-button- grpd-py-12 grpd-px-32 grpd-border grpd-border-color-white grpd-text-color-template1_color_1 grpd-background-color-template1_color_2 grpd-border-radius-4 grpd-font-weight-500 grpd-text-align-center">Get Started</a>
                   </div>
               </div>
           </div>
@@ -192,12 +75,12 @@ body {
                <p class="grpd-p">meis dolor comprehensam at vij. Alii nusquam cu duo, vim eu consulatu percipitur, meis doorcomprehen sam at vis. Vel ut dignissim signiferumq nusquam.
               </p>
               <br>
-                <a href="#" class=" btn_primary grpd-border-color-template1_color_1  grpd-border grpd-border-radius-4  grpd-font-weight-500 grpd-py-16 grpd-px-24 grpd-text-align-center">Download Now</a>
+                <a href="#" class="grpd-button-1 grpd-border-color-template1_color_1 grpd-background-color-template1_color_1 grpd-text-color-template1_color_2 grpd-border grpd-border-radius-4  grpd-font-weight-500 grpd-py-16 grpd-px-24 grpd-text-align-center">Download Now</a>
               
             </div>
             <div class="grpd-col-lg-7 grpd-col-md-12 grpd-col-xs-12 ">
-              <div class="grpd-row grpd-display-flex grpd-justify-content-evenly ">
-                <div class="grpd-col-lg-5 grpd-col-md-7 grpd-col-xs-12   grpd-mx-12 grpd-my-8  grpd-display-flex grpd-justify-content-center grpd-align-items-start grpd-flex-column grpd-px-24 grpd-py-16 default-card-outline grpd-border-radius-10">
+              <div class="grpd-row grpd-display-flex grpd-justify-content-around ">
+                <div class="grpd-col-lg-5 grpd-col-md-6 grpd-col-xs-12   grpd-mx-12 grpd-my-8  grpd-display-flex grpd-justify-content-center grpd-align-items-start grpd-flex-column grpd-px-24 grpd-py-16 default-card-outline grpd-border-radius-10">
                     <div class=" grpd-py-4 grpd-px-4 icon1_bg grpd-my-18 icon1_bg grpd-border-circle grpd-sass-box-shadow-red">
                         <img class=" grpd-mx-16 grpd-my-16" src="https://rapidtech.s3.amazonaws.com/assets/p_assets/internalTemplates/biceps1.png"
                             alt="">
@@ -207,7 +90,7 @@ body {
                         semper ipsum
                         adipiscing vestibulum.</p>
                 </div>
-                <div class="grpd-col-lg-5 grpd-col-md-7 grpd-col-xs-12   grpd-mx-12 grpd-my-8 grpd-display-flex grpd-justify-content-center grpd-align-items-start grpd-flex-column  grpd-px-24 grpd-py-16  default-card-outline grpd-border-radius-10">
+                <div class="grpd-col-lg-5 grpd-col-md-6 grpd-col-xs-12   grpd-mx-12 grpd-my-8 grpd-display-flex grpd-justify-content-center grpd-align-items-start grpd-flex-column  grpd-px-24 grpd-py-16  default-card-outline grpd-border-radius-10">
                     <div class="grpd-py-4 grpd-px-4 icon2_bg grpd-my-18 grpd-border-circle grpd-sass-box-shadow-blue">
                         <img class="l-vimg grpd-mx-16 grpd-my-16" src="https://rapidtech.s3.amazonaws.com/assets/p_assets/internalTemplates/flexibility1.png"
                             alt="">
@@ -218,18 +101,19 @@ body {
                         adipiscing vestibulum.</p>
                 </div>
               </div>
-              <div class="grpd-row grpd-display-flex grpd-justify-content-evenly  ">
-              <div class="grpd-col-lg-5 grpd-col-md-7 grpd-col-xs-12   grpd-mx-12 grpd-my-8  grpd-display-flex grpd-justify-content-center grpd-align-items-start grpd-flex-column grpd-px-24 grpd-py-16  default-card-outline grpd-border-radius-10">
-                <div class="grpd-py-4 grpd-px-4 icon2_bg grpd-my-18  grpd-border-circle grpd-sass-box-shadow-template1_color_1">
-                    <img class=" grpd-mx-16 grpd-my-16" src="https://rapidtech.s3.amazonaws.com/assets/p_assets/internalTemplates/user1.png"
-                        alt="">
-                </div>
-                <h5 class=" grpd-h4 grpd-font-weight-600 grpd-text-color-black">User friendly</h5>
-                <p class="grpd-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam dolor
-                    semper ipsum
-                    adipiscing vestibulum.</p>
-            </div>
-                  <div class="grpd-col-lg-5 grpd-col-md-7 grpd-col-xs-12   grpd-mx-12 grpd-my-8  grpd-display-flex grpd-justify-content-center grpd-align-items-start grpd-flex-column grpd-px-24 grpd-py-16  default-card-outline grpd-border-radius-10">
+              <div class="grpd-row grpd-display-flex grpd-justify-content-around  ">
+                <div class=" grpd-col-lg-5 grpd-col-md-6 grpd-col-xs-12   grpd-mx-12 grpd-my-8 grpd-display-flex grpd-justify-content-center grpd-align-items-start grpd-flex-column  grpd-px-24 grpd-py-16  default-card-outline grpd-border-radius-10">
+                  <div class="grpd-py-4 grpd-px-4 icon2_bg grpd-my-18  grpd-border-circle grpd-sass-box-shadow-orange">
+                      <img class="l-vimg grpd-mx-16 grpd-my-16" src="https://rapidtech.s3.amazonaws.com/assets/p_assets/internalTemplates/user1.png"
+                          alt="">
+                  </div>
+                  <h5 class=" grpd-h4 grpd-font-weight-600 grpd-text-color-black">User friendly</h5>
+                  <p class="grpd-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam dolor
+                      semper ipsum
+                      adipiscing vestibulum.
+                  </p>
+              </div>
+                  <div class="grpd-col-lg-5 grpd-col-md-6 grpd-col-xs-12   grpd-mx-12 grpd-my-8  grpd-display-flex grpd-justify-content-center grpd-align-items-start grpd-flex-column grpd-px-24 grpd-py-16  default-card-outline grpd-border-radius-10">
                       <div class="grpd-py-4 grpd-px-4 icon3_bg grpd-my-18  grpd-border-circle grpd-sass-box-shadow-template1_color_1">
                           <img class=" grpd-mx-16 grpd-my-16" src="https://rapidtech.s3.amazonaws.com/assets/p_assets/internalTemplates/layout1.png"
                               alt="">
@@ -261,7 +145,7 @@ body {
               <p class="grpd-p grpd-text-align-start">meis dolor comprehensam at vij. Alii nusquam cu duo, vim eu consulatu percipitur, meis doorcomprehen sam at vis. Vel ut dignissim signiferumq nusquam.                
               </p>
               <br>
-              <a href="#" class="btn_primary grpd-border-color-template1_color_1  grpd-border grpd-border-radius-4  grpd-font-weight-500 grpd-py-16 grpd-px-24 grpd-text-align-center">Download Now</a>
+              <a href="#" class="grpd-button-1 grpd-border-color-template1_color_1 grpd-background-color-template1_color_1 grpd-text-color-template1_color_2 grpd-border grpd-border-radius-4  grpd-font-weight-500 grpd-py-16 grpd-px-24 grpd-text-align-center">Download Now</a>
             </div>
           </div>
         </div>
@@ -362,7 +246,7 @@ body {
                   </div>
                 </div>
               
-                <a href="#" class=" btn_primary grpd-border-color-template1_color_1 saas-template-background grpd-text-color-template1_color_2 grpd-border grpd-border-radius-4  grpd-font-weight-500 grpd-py-12 grpd-px-36 grpd-text-align-center">Try Now</a>
+                <a href="#" class="grpd-button-1 grpd-border-color-template1_color_1 saas-template-background grpd-text-color-template1_color_2 grpd-border grpd-border-radius-4  grpd-font-weight-500 grpd-py-12 grpd-px-36 grpd-text-align-center">Try Now</a>
               </div>
               <div class="grpd-col-lg-3 grpd-col-md-5 grpd-col-xs-12 grpd-my-16 grpd-display-flex grpd-justify-content-center grpd grpd-align-items-center grpd-flex-column grpd-py-32 default-card-outline">
                 <div class="grpd-text-align-center">
@@ -394,7 +278,7 @@ body {
                   </div>              
                 </div>
               
-                <a href="#" class="btn_primary grpd-border-color-template1_color_1 saas-template-background grpd-text-color-template1_color_2 grpd-border grpd-border-radius-4  grpd-font-weight-500 grpd-py-12 grpd-px-36 grpd-text-align-center">Try Now</a>
+                <a href="#" class="grpd-button-1 grpd-border-color-template1_color_1 saas-template-background grpd-text-color-template1_color_2 grpd-border grpd-border-radius-4  grpd-font-weight-500 grpd-py-12 grpd-px-36 grpd-text-align-center">Try Now</a>
               </div>
               <div class="grpd-col-lg-3 grpd-col-md-5 grpd-col-xs-12 grpd-my-16 grpd-display-flex grpd-justify-content-center  grpd-align-items-center grpd-flex-column grpd-py-32 default-card-outline ">
                 <div class="grpd-text-align-center">
@@ -425,7 +309,7 @@ body {
                       <span class="grpd-pl-4">Basic Integrations</span>
                   </div>               
                 </div>
-                <a href="#" class="btn_primary grpd-border-color-template1_color_1 saas-template-background grpd-text-color-template1_color_2 grpd-border grpd-border-radius-4  grpd-font-weight-500 grpd-py-12 grpd-px-36 grpd-text-align-center">Try Now</a>
+                <a href="#" class="grpd-button-1 grpd-border-color-template1_color_1 saas-template-background grpd-text-color-template1_color_2 grpd-border grpd-border-radius-4  grpd-font-weight-500 grpd-py-12 grpd-px-36 grpd-text-align-center">Try Now</a>
               </div>
             </div>
           </div>
@@ -437,7 +321,7 @@ body {
             <div class=" grpd-col-md-10 grpd-display-flex  grpd-py-32 grpd-justify-content-center grpd-align-items-center flex-column">            
               <h3 class="grpd-h2-med grpd-text-color-white grpd-text-align-center"> Fasten your website creation process with Landify UI Kit </h3>
             </div>
-            <a href="#" class=" btn_secondary grpd-py-12 grpd-px-32 grpd-border grpd-border-color-white grpd-text-color-template1_color_1 grpd-background-color-template1_color_2 grpd-border-radius-4 grpd-font-weight-500 grpd-text-align-center">Download Now</a>
+            <a href="#" class="grpd-button-1 grpd-py-12 grpd-px-32 grpd-border grpd-border-color-white grpd-text-color-template1_color_1 grpd-background-color-template1_color_2 grpd-border-radius-4 grpd-font-weight-500 grpd-text-align-center">Download Now</a>
                    <div class="grpd-row grpd-display-flex grpd-justify-content-evenly grpd-py-16 grpd-grpd-align-items-center grpd-text-align-center grpd-py-24">
               <div class="grpd-col-lg-4 grpd-col-md-4 grpd-col-xs-12 grpd-my-10 grpd-text-color-white"><i class="fa fa-check-circle" aria-hidden="true"></i> Fully organized UI components</div>
               <div class="grpd-col-lg-4 grpd-col-md-4 grpd-col-xs-12 grpd-my-10 grpd-text-color-white"><i class="fa fa-check-circle" aria-hidden="true"></i> License to use on multiple projects</div>
@@ -446,5 +330,7 @@ body {
           </div>
         </div>
      </section>
-</body>
-<html>
+    `,
+      });
+  }
+}

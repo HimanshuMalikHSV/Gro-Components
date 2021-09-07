@@ -59,83 +59,80 @@
     }
 
     .grpd-border-color-white {
-      border-color: var(--white);
+      border-color: white;
     }
 
     .grpd-text-color-white {
-      color: var(--white);
+      color: white;
     }
 
     .grpd-background-color-white {
-      background-color: var(--white);
+      background-color: white;
     }
 
     .grpd-border-color-black {
-      border-color: var(--black);
+      border-color:black;
     }
 
     .grpd-text-color-black {
-      color: var(--black);
+      color:black;
     }
 
     .grpd-background-color-black {
-      background-color: var(--black);
+      background-color:black;
     }
 
     .grpd-border-color-webinar2_color_1 {
-      border-color: var(--webinar2_color_1);
+      border-color: #FD7E40;
     }
 
     .grpd-text-color-webinar2_color_1 {
-      color: var(--webinar2_color_1);
+      color: #FD7E40;
     }
 
     .grpd-background-color-webinar2_color_1 {
-      background-color: var(--webinar2_color_1);
+      background-color: #FD7E40;
     }
 
     .grpd-border-color-webinar2_color_2 {
-      border-color: var(--webinar2_color_2);
+      border-color: #FFF9F6;
     }
 
     .grpd-text-color-webinar2_color_2 {
-      color: var(--webinar2_color_2);
+      color: #FFF9F6;
     }
 
     .grpd-background-color-webinar2_color_2 {
-      background-color: var(--webinar2_color_2);
+      background-color: #FFF9F6;
     }
 
     .grpd-border-color-webinar2_color_3 {
-      border-color: var(--webinar2_color_3);
+      border-color: #4F4F4F;
     }
 
     .grpd-text-color-webinar2_color_3 {
-      color: var(--webinar2_color_3);
+      color: #4F4F4F;
     }
 
     .grpd-background-color-webinar2_color_3 {
-      background-color: var(--webinar2_color_3);
+      background-color: #4F4F4F;
     }
 
     .grpd-border-color-webinar2_color_4 {
-      border-color: var(--webinar2_color_4);
+      border-color: #333333;
     }
 
     .grpd-text-color-webinar2_color_4 {
-      color: var(--webinar2_color_4);
+      color: #333333;
     }
 
     .grpd-background-color-webinar2_color_4 {
-      background-color: var(--webinar2_color_4);
+      background-color: #333333;
     }
 
 
     body {
-      --webinar2_color_1: #FD7E40;
-      --webinar2_color_2: #FFF9F6;
-      --webinar2_color_3: #4F4F4F;
-      --webinar2_color_4: #333333;
+ 
       --font_family: , sans-serif;
     }
 
@@ -162,6 +159,21 @@
     .icon_hover:hover{
       color: #fd7f40d8;
     }
+    .logo_right{
+      display: none;
+    }
+    @media only screen and (max-width: 990px) {
+      .logo_right {
+        display: inline;
+      }
+    }
+      @media only screen and (max-width: 970px) {
+      .logo_mid {
+        display: none;
+      }
+    }
+    
+
   </style>
   <!-- logo section -->
 
@@ -185,7 +197,7 @@
           </ul>
           <ul class="navbar-nav grpd-col-lg-4 grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-my-8">
             <li>
-          <a href="/" class="navbar-brand  ">
+          <a href="/" class="navbar-brand logo_mid ">
             <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/logo2.png" class="grpd-width-15"/></a>
           </li>
           </ul>
@@ -201,7 +213,10 @@
             </li>
           </ul>
         </div>
+        <a href="/" class="navbar-brand  logo_right ">
+          <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/logo2.png" class="grpd-width-15" /></a>
       </nav>
+      
     </div>
   </section>
   <!-- Section1 -->
@@ -240,10 +255,10 @@
            
             
               <div class="grpd-form-group">
-                <input type="email" name="email" placeholder="Email" required class="grpd-form-input-control grpd-border border_color grpd-border-radius-4 grpd-font-weight-400"/>
+                <input type="email" name=${FORM_KEYS.email} placeholder="Email" required class="grpd-form-input-control grpd-border border_color grpd-border-radius-4 grpd-font-weight-400"/>
               </div>
               <div class="grpd-form-group">
-                <input type="password" name="contact_phone" placeholder="Password" class="grpd-form-input-control grpd-border border_color grpd-border-radius-4 grpd-font-weight-400"/>
+                <input type="password" name=${FORM_KEYS.phone} placeholder="Password" class="grpd-form-input-control grpd-border border_color grpd-border-radius-4 grpd-font-weight-400"/>
               </div>
               <div class="grpd-form-group ">
               <button role="button" type="submit" class=" btn_hover grpd-border  grpd-border-radius-4 grpd-border-color-webinar2_color_1 grpd-background-color-webinar2_color_1 grpd-text-color-white  grpd-width-100 grpd-px-32 grpd-py-12 grpd-font-weight-500">Register Now</button>

@@ -55,48 +55,45 @@
     }
 
     .grpd-border-color-white {
-  border-color: var(--white); }
+  border-color: white; }
 .grpd-text-color-white {
-  color: var(--white); }
+  color: white; }
 .grpd-background-color-white {
-  background-color: var(--white); }
+  background-color: white; }
 .grpd-border-color-black {
-  border-color: var(--black); }
+  border-color: black; }
 .grpd-text-color-black {
-  color: var(--black); }
+  color: black; }
 .grpd-background-color-black {
-  background-color: var(--black); }
+  background-color: black; }
 .grpd-border-color-webinar1_color_1 {
-  border-color: var(--webinar1_color_1); }
+  border-color: #008379; }
 .grpd-text-color-webinar1_color_1 {
-  color: var(--webinar1_color_1); }
+  color: #008379; }
 .grpd-background-color-webinar1_color_1 {
-  background-color: var(--webinar1_color_1); }
+  background-color: #008379; }
 .grpd-border-color-webinar1_color_2 {
-  border-color: var(--webinar1_color_2); }
+  border-color: #F6FBFA; }
 .grpd-text-color-webinar1_color_2 {
-  color: var(--webinar1_color_2); }
+  color: #F6FBFA; }
 .grpd-background-color-webinar1_color_2 {
-  background-color: var(--webinar1_color_2); }
+  background-color: #F6FBFA; }
 .grpd-border-color-webinar1_color_3 {
-  border-color: var(--webinar1_color_3); }
+  border-color: #4F4F4F; }
 .grpd-text-color-webinar1_color_3 {
-  color: var(--webinar1_color_3); }
+  color: #4F4F4F; }
 .grpd-background-color-webinar1_color_3 {
-  background-color: var(--webinar1_color_3); }
+  background-color: #4F4F4F; }
 .grpd-border-color-webinar1_color_4 {
-  border-color: var(--webinar1_color_4); }
+  border-color: #333333; }
 .grpd-text-color-webinar1_color_4 {
-  color: var(--webinar1_color_4); }
+  color: #333333; }
 .grpd-background-color-webinar1_color_4 {
-  background-color: var(--webinar1_color_4); }
+  background-color: #333333; }
 
 
   body {
-            --webinar1_color_1: #008379;
-            --webinar1_color_2:  #F6FBFA;
-            --webinar1_color_3: #4F4F4F;
-            --webinar1_color_4: #333333;
+
             --font_family: Poppins , sans-serif;
         }
 .img_opacity{
@@ -550,19 +547,19 @@ border-color: #06746B;
               class="grpd-my-auto grpd-mx-auto grpd-width-lg-100 grpd-width-xs-100 grpd-width-md-100 grpd-px-lg-32 grpd-pl-lg-56 grpd-py-32 grpd-border-radius-4">
               <div class="grpd-form-group">
   
-                <input type="text" name=name placeholder="FullName" required
+                <input type="text" name=${FORM_KEYS.name} placeholder="FullName" required
                   class="grpd-form-input-control grpd-border border_color grpd-border-color-webinar1_color_3 grpd-border-radius-4 grpd-font-weight-400" />
               </div>
               <div class="grpd-form-group">
-                <input type="email" name=email placeholder="Email" required
+                <input type="email" name=${FORM_KEYS.email} placeholder="Email" required
                   class="grpd-form-input-control grpd-border border_color grpd-border-color-webinar1_color_3 grpd-border-radius-4 grpd-font-weight-400" />
               </div>
               <div class="grpd-form-group">
-                <input type="password" name=password placeholder="Password"  required
+                <input type="password" name=${FORM_KEYS.password} placeholder="Password"  required
                   class="grpd-form-input-control grpd-border border_color grpd-border-color-webinar1_color_3 grpd-border-radius-4 grpd-font-weight-400" />
               </div>
               <div class="grpd-form-group">
-                <textarea type="text" name="massage" placeholder="Massage" rows="3"
+                <textarea type="text" name=${FORM_KEYS.massage} placeholder="Massage" rows="3"
                   class="grpd-form-input-control grpd-border border_color grpd-border-color-webinar1_color_3 grpd-border-radius-4 grpd-font-weight-400"></textarea>
               </div>
               <div class="grpd-text-align-start">

@@ -134,6 +134,29 @@
       font-family: 'Poppins', sans-serif;
     }
 
+    .grpd-form-input-control {
+      display: inline-block;
+      width: 100%;
+      vertical-align: middle;
+      padding: 0.75rem 0.75rem;
+      line-height: 1.5rem;
+      color: black;
+    }
+
+    .grpd-form-input-control {
+      border: 1px solid #B0B0B0;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+      outline: unset;
+    }
+
+    .grpd-form-input-control:hover,
+    .grpd-form-input-control:focus,
+    .grpd-form-input-control:focus-visible,
+    .grpd-form-input-control:active {
+      border: 1px solid #B0B0B0;
+      outline: unset;
+    }
+
     .icon_color {
       color: #A251FF;
     }
@@ -161,7 +184,7 @@
 
     .btn_primary:hover {
       color: #f7f0f0;
-      background-color: #6550eede;
+      background-color: #6550eeef;
       transition: 500ms;
     }
 
@@ -194,6 +217,11 @@
 
     .bg_color {
       background: rgba(102, 80, 238, 0.9);
+    }
+
+    #grpd-background-image {
+      background-image: url("https://grorapidassets.s3.amazonaws.com/images/webinartemplate/job/bg_image.png");
+      background-size: cover;
     }
   </style>
   <!-- logo section -->
@@ -250,11 +278,11 @@
                   class="grpd-text-color-webinar10_color_1">UI/UX</span> Designer
               </h1>
               <p class="grpd-p grpd-text-color-webinar10_color_3 grpd-pt-lg-20 ">Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Nulla at ante efficitur, feugiat mauris id, pellentesque felis.</p>
+                adipiscing elit. Nulla at ante efficitur, feugiat mauris oid, pellentesque felis.</p>
             </div>
             <div class="grpd-py-16 grpd-row">
               <a href="#"
-                class=" grpd-button-1  grpd-pr-64 grpd-pl-56  grpd-border-radius-4 grpd-py-12 grpd-fontWeight-500 grpd-border grpd-border-color-webinar10_color_1 grpd-background-color-webinar10_color_1 grpd-text-color-white   grpd-mt-10 grpd-mr-lg-16 grpd-mr-xs-0 grpd-mr-xs-16  ">Apply
+                class=" btn_primary grpd-px-36  grpd-border-radius-4 grpd-py-12 grpd-fontWeight-500 grpd-border grpd-border-color-webinar10_color_1 grpd-background-color-webinar10_color_1 grpd-text-color-white   grpd-mt-10 grpd-mr-lg-16 grpd-mr-xs-0 grpd-mr-xs-16  ">Apply
                 Now</a>
             </div>
 
@@ -376,7 +404,7 @@
           </div>
           <div class="grpd-pt-36 grpd-row">
             <a href="#"
-              class=" grpd-button-1  grpd-px-32  grpd-border-radius-4 grpd-py-12 grpd-fontWeight-500 grpd-border grpd-border-color-webinar10_color_1 grpd-background-color-webinar10_color_1 grpd-text-color-white  ">Apply
+              class=" btn_primary  grpd-px-32  grpd-border-radius-4 grpd-py-12 grpd-fontWeight-500 grpd-border grpd-border-color-webinar10_color_1 grpd-background-color-webinar10_color_1 grpd-text-color-white  ">Apply
               Now</a>
           </div>
         </div>
@@ -424,7 +452,8 @@
     </div>
   </section>
   <!-- Section4 -->
-  <section class="grpd-wrapper font_family_webinar_template_10 grpd-py-64 bg_color grpd-py-32 grpd-font-weight-300">
+  <section id="grpd-background-image"
+    class="grpd-wrapper font_family_webinar_template_10 grpd-py-64 grpd-py-32 grpd-font-weight-300">
     <div class="grpd-container-xxl grpd-mx-auto">
       <div class="grpd-row">
         <div
@@ -433,7 +462,7 @@
             <h3 class="grpd-h3 ">
               Jobs you can Apply for
             </h3>
-          </div>
+          </div> +
           <div class="grpd-col-md-12 grpd-col-lg-7 grpd-col-xs-12">
             <p class="grpd-p grp  grpd-py-16">
               Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
@@ -605,7 +634,7 @@
 
 
           <form method="POST" idf="65795283142108630" formstate="normal"
-            class="grpd-border-radius-4 default-card-shadow-radius grpd-my-auto grpd-background-color-white grpd-mx-auto grpd-width-lg-70 grpd-width-md-80 grpd-width-sm-100 grpd-width-xs-90 grpd-px-32 grpd-py-32">
+            class="grpd-border-radius-4 default-card-shadow-radius grpd-my-auto grpd-background-color-white grpd-mx-auto grpd-width-lg-70 grpd-width-md-80 grpd-width-sm-100 grpd-width-xs-90 grpd-px-32 grpd-pt-40 grpd-pb-20">
 
             <div class="grpd-form-group">
               <input type="text" name="${FORM_KEYS.fullName}" placeholder="Full Name" required

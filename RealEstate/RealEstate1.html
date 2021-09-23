@@ -136,7 +136,22 @@
       font-family: 'Montserrat', sans-serif;
     }
 
-
+  .grpd-form-input-control {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0.75rem 0.75rem;
+  line-height: 1.5rem;
+  color: black;
+}
+.grpd-form-input-control:hover,
+.grpd-form-input-control:focus,
+.grpd-form-input-control:focus-visible,
+.grpd-form-input-control:active {
+  border: 1px solid #B0B0B0;
+  outline: unset;
+}
+  
     .img_opacity {
       opacity: 80%;
     }
@@ -190,7 +205,7 @@
 
 
     .btn_secondary:hover {
-      background-color: #ebf9f5ec !important;
+      background-color: #ebf9f5fa !important;
       color: #2c51d7c9;
       transition: 500ms;
     }
@@ -239,6 +254,10 @@
       background-image: url("https://grorapidassets.s3.amazonaws.com/images/webinartemplate/RealEstate1/bg_image.png");
       background-size: cover;
     }
+
+    .font_style {
+      font-style: italic;
+    }
   </style>
   <!-- header section -->
   <section id="grpd-background-image" class="grpd-wrapper grpd-pb-100 font_family_realestate_1 img_opacity  ">
@@ -249,15 +268,15 @@
           aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"
           class="navbar-toggler"><span class="navbar-toggler-icon grpd-text-color-white"><i class="fa fa-bars">
             </i></span></button>
-        <div id="navbarTogglerDemo01" class="collapse navbar-collapse grpd-row ">
+        <div id="navbarTogglerDemo01" class="collapse navbar-collapse grpd-row grpd-justify-content-center ">
           <ul
-            class="navbar-nav grpd-col-lg-5  grpd-display-flex grpd-justify-content-evenly grpd-align-items-center grpd-justify-content-center   grpd-my-8">
+            class="navbar-nav grpd-col-lg-4  grpd-display-flex grpd-justify-content-evenly grpd-align-items-center grpd-justify-content-center   grpd-my-8">
             <li class="nav-item grpd-px-lg-12">
               <a href="#" class="nav-link grpd-text-color-white  grpd-link-hover-white grpd-font-weight-600 ">Home</a>
             </li>
             <li class="nav-item grpd-px-lg-12">
               <a href="#" class="nav-link grpd-text-color-white grpd-link-hover-white grpd-font-weight-400 ">Properties
-                us</a>
+              </a>
             </li>
 
           </ul>
@@ -270,7 +289,7 @@
             </li>
           </ul>
           <ul
-            class="navbar-nav  grpd-col-lg-5  grpd-display-flex grpd-justify-content-evenly grpd-align-items-center grpd-justify-content-center  grpd-my-8">
+            class="navbar-nav  grpd-col-lg-4  grpd-display-flex grpd-justify-content-evenly grpd-align-items-center grpd-justify-content-center  grpd-my-8">
 
             <li class="nav-item grpd-px-lg-12">
               <a href="#"
@@ -325,7 +344,7 @@
               <h5 class="grpd-h5 grpd-pt-16 grpd-text-color-realestate_1_color_4 grpd-font-weight-600">
                 Street Avenue Apartment
               </h5>
-              <h6 class="grpd-h6 grpd-text-color-realestate_1_color_4 grpd-font-weight-500">
+              <h6 class="grpd-h6 grpd-text-color-realestate_1_color_2 grpd-font-weight-500">
                 $15.000
               </h6>
 
@@ -365,7 +384,7 @@
               <h5 class="grpd-h5 grpd-pt-16 grpd-text-color-realestate_1_color_4 grpd-font-weight-600">
                 Road Palace Luxury House
               </h5>
-              <h6 class="grpd-h6 grpd-text-color-realestate_1_color_4 grpd-font-weight-500">
+              <h6 class="grpd-h6 grpd-text-color-realestate_1_color_2 grpd-font-weight-500">
                 $45.000
               </h6>
 
@@ -405,7 +424,7 @@
               <h5 class="grpd-h5 grpd-pt-16 grpd-text-color-realestate_1_color_4 grpd-font-weight-600">
                 Avery Street Condominiu
               </h5>
-              <h6 class="grpd-h6 grpd-text-color-realestate_1_color_4 grpd-font-weight-500">
+              <h6 class="grpd-h6 grpd-text-color-realestate_1_color_2 grpd-font-weight-500">
                 $65.000
               </h6>
 
@@ -458,7 +477,7 @@
           <div class="grpd-px-lg-40 grpd-py-lg-32  grpd-px-md-40  grpd-py-md-32  grpd-px-16 grpd-py-16   ">
 
             <p
-              class="grpd-text-color-realestate_1_color_3 grpd-p grpd-text-align-center grpd-mx-auto line_space  grpd-fontWeight-300">
+              class="grpd-text-color-realestate_1_color_3 font_style grpd-p grpd-text-align-center grpd-mx-auto line_space  grpd-fontWeight-400">
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam dolor semper ipsum adipiscing vestibulum.
               Lorem ipsum
               dolor sit amet, consectetur adipiscing elit“ </p>
@@ -480,7 +499,7 @@
           <div class="grpd-px-lg-40 grpd-py-lg-32  grpd-px-md-40  grpd-py-md-32  grpd-px-16 grpd-py-16   ">
 
             <p
-              class="grpd-text-color-realestate_1_color_3 grpd-p grpd-text-align-center  grpd-mx-auto  line_space  grpd-fontWeight-300">
+              class="grpd-text-color-realestate_1_color_3 font_style grpd-p grpd-text-align-center  grpd-mx-auto  line_space  grpd-fontWeight-400">
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam dolor semper ipsum adipiscing vestibulum.
               Lorem ipsum
               dolor sit amet, consectetur adipiscing elit“ </p>
@@ -502,7 +521,7 @@
           <div class="grpd-px-lg-40 grpd-py-lg-32  grpd-px-md-40  grpd-py-md-32  grpd-px-16 grpd-py-16   ">
 
             <p
-              class="grpd-text-color-realestate_1_color_3 grpd-p grpd-text-align-center  grpd-mx-auto  line_space  grpd-fontWeight-300">
+              class="grpd-text-color-realestate_1_color_3 font_style grpd-p grpd-text-align-center  grpd-mx-auto  line_space  grpd-fontWeight-400">
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam dolor semper ipsum adipiscing vestibulum.
               Lorem ipsum
               dolor sit amet, consectetur adipiscing elit“ </p>
@@ -560,7 +579,7 @@
             </div>
 
             <div class="grpd-form-group">
-              <textarea type="text" name="${FORM_KEYS.massage}" placeholder="Massage" rows="3"
+              <textarea type="text" name="${FORM_KEYS.message}" placeholder="Message" rows="3"
                 class="grpd-form-input-control grpd-border border_color grpd-border-color-realestate_1_color_3  grpd-font-weight-400"></textarea>
             </div>
             <div class="  ">
@@ -614,11 +633,12 @@
                 class="fab fa-facebook-square">
               </i></a>
             <a href="#" class="grpd-text-color-white grpd-link-hover-white grpd-p-sm grpd-mx-8"><i
-                class="fab fa-twitter-square">
-              </i></a>
-            <a href="#" class="grpd-text-color-white grpd-link-hover-white grpd-p-sm grpd-mx-8"><i
                 class="fab fa-instagram">
               </i></a>
+            <a href="#" class="grpd-text-color-white grpd-link-hover-white grpd-p-sm grpd-mx-8"><i
+                class="fab fa-twitter">
+              </i></a>
+
             <a href="#" class="grpd-text-color-white grpd-link-hover-white grpd-p-sm grpd-mx-8"><i
                 class="fab fa-youtube">
               </i></a>

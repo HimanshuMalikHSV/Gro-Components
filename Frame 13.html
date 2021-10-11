@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Page title</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Description">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://rapidtech.s3.amazonaws.com/assets/framework_theme.css" rel="stylesheet">
+    <link href="https://rapidtech.s3.amazonaws.com/assets/framework.css" rel="stylesheet">
+    <link href="https://rapidtech.s3.amazonaws.com/assets/plugin_theme.css" rel="stylesheet">
+    <link href="https://rapidtech.s3.amazonaws.com/assets/framework1.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://platform-staging.grorapid.com/assets/css/portal/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158951641-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-158951641-2');
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            --theme_primary: #2F80ED;
+            --theme_light: #F9FAFB;
+            --theme_text_primary: #222222;
+            --theme_text_secondary: #4F4F4F;
+            --theme_text_tertiary: #B0B0B0;
+            --font_family: Open Sans, sans-serif;
+        }
+
+        .font {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 25px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #367BEE;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 25px;
+            width: 25px;
+            left: 5px;
+
+
+            background-color: #F7F8FA;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #e7e7e7;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        .header_color {
+            color: #112D5C;
+        }
+
+        .pra_color {
+            color: #61718B;
+        }
+
+        .bg_color1 {
+            background-color: #367BEE;
+        }
+
+        .text_color1 {
+            color: #425466;
+        }
+
+        .icon_color {
+            color: #367BEE;
+        }
+
+        .text_color2 {
+            color: #687DA3;
+        }
+
+        .icon_width {
+            width: 50px;
+        }
+
+        .link_color {
+            color: #4F8EF7;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .position_icon {
+            position: absolute;
+            right: -40px;
+            top: -1px;
+
+        }
+         .border_left{
+            border-left: 1px solid #dee2e6;
+        }
+   /* media */
+        @media only screen and (max-width: 990px) {
+            .position_icon{
+                display: none;
+            }
+            .border_left{
+                display: none;
+            }
+        }
+   
+    </style>
+
+</head>
+
+<body>
+
+    <section class="grpd-wrapper grpd-font-weight-400 ">
+        <div class="grpd-container-xxl  grpd-py-32 grpd-mx-auto">
+            <div class="">
+                
+                <h3 class="header_color grpd-text-align-center">Simple pricing, no commitment</h3>
+                <p class="pra_color grpd-font-weight-300 grpd-body1 grpd-pb-20 grpd-text-align-center">Everything you
+                    need. Pick
+                    what work's best for you.</p>
+            </div>
+
+            <div class="grpd-text-align-center">
+                <span class="text_color1 grpd-mr-12 ">Pay Monthly</span>
+                <span><label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
+                <span class="text_color1 grpd-ml-12 " grpd-ml-12>Pay Annualy</span>
+                <span
+                    class="grpd-body1 grpd-ml-14 bg_color1 grpd-border-radius-48 grpd-font-weight-300 grpd-px-14 grpd-py-4 grpd-border-col grpd-background-color-theme_primary grpd-text-color-white">
+                    Save 20%</span>
+            </div>
+
+            <div class="grpd-row grpd-py-48">
+                <div class="grpd-col-lg-4 grpd-col-md-6 grpd-col-xs-12 grpd-py-10 grpd-px-8">
+
+                    <div class="grpd-border grpd-border-radius-10 grpd-py-32 grpd-px-32">
+                        <div>
+                            <h4 class="header_color grpd-h3-med">Free Forever</h4>
+                            <h3 class="header_color grpd-h3">Free</h3>
+                            <p class="grpd-p grpd-font-weight-300 pra_color">Use our free plan to get a taste of all the
+                                tools and services we provide with Grorapid.</p>
+                        </div>
+                        <div class="">
+                            <h5 class="text_color1 grpd-font-weight-400">
+                                This plan includes:
+                            </h5>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Unlimited contacts</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check  icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">1000 Email List Cleaning</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Unlimited Recipes</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i class="fa fa-times text_color2" aria-hidden="true"></i>
+                                <del><span class="grpd-pl-4  text_color2">No Grorapid Branding</span></del>
+                            </div>
+                        </div>
+                        <div class="grpd-py-20">
+                            <p class="grpd-body1 text_color2">Email Marketing</p>
+                            <div class="grpd-pb-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">1000 Emails</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check  icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">High Deliverability with AWS</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Drag and drop editor</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Rich text editor</span>
+                            </div>
+                        </div>
+                        <div class="grpd-py-20">
+                            <p class="grpd-body1 text_color2">Landing Pages</p>
+                            <div class="grpd-pb-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">5 pages</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check  icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Custom domain</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Drag and drop editor</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i class="fa fa-times text_color2" aria-hidden="true"></i>
+                                <del><span class="grpd-pl-4  text_color2">Custom CSS and JS</span></del>
+                            </div>
+                        </div>
+                        <div class="grpd-py-20">
+                            <p class="grpd-body1 text_color2">Forms & Popups</p>
+                            <div class="grpd-pb-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Simple and Intuitive Editor</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check  icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Embeddable form</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Popups and Lead capture</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i class="fa fa-times text_color2" aria-hidden="true"></i>
+                                <del><span class="grpd-pl-4  text_color2">Real time notifications</span></del>
+                            </div>
+                        </div>
+                        <div class="grpd-text-align-center">
+                            <a href="#"
+                                class="grpd-button-secondary-theme_primary grpd-display-flex grpd-justify-content-center grpd-align-items-center grpd-py-12 grpd-border-color-theme_primary grpd-border "
+                                target="_blank" rel="noopener noreferrer">Get started for free</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="grpd-col-lg-8 grpd-col-md-6 grpd-col-xs-12 grpd-py-10 grpd-pl-8">
+                    <div class="grpd-row grpd-border grpd-border-radius-10   grpd-px-18">
+                        <div class="grpd-col-lg-6 grpd-col-md-12 grpd-col-xs-12 ">
+                            <div class="grpd-px-16 grpd-py-32  ">
+                                <div class="relative">
+                                    <div>
+                                        <h2 class="header_color  grpd-h3-med icon_color">Grorapid Pro</h2>
+                                    </div>
+                                    <div class="position_icon">
+                                        <img src="https://grorapidassets.s3.amazonaws.com/images/Pricing/arrow.png" alt="" srcset="">
+                                    </div>
+                                    <span class="header_color grpd-h3">$35 </span><span>/ month</span>
+                                    <p class="grpd-p grpd-font-weight-300  grpd-pt-8 pra_color">Use our free plan to get
+                                        a taste of all the
+                                        tools and services we provide with Grorapid.</p>
+                                </div>
+                                <div class="">
+                                    <h5 class="text_color1 grpd-font-weight-400">
+                                        This plan includes:
+                                    </h5>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Unlimited contacts</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check  icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">1000 Email List Cleaning</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Unlimited Recipes</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">No Grorapid Branding</span>
+                                    </div>
+                                </div>
+                                <div class="grpd-py-20">
+                                    <p class="grpd-body1 text_color2">Email Marketing</p>
+                                    <div class="grpd-pb-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">1000 Emails</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check  icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">High Deliverability with AWS</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Drag and drop editor</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Rich text editor</span>
+                                    </div>
+                                </div>
+                                <div class="grpd-py-20">
+                                    <p class="grpd-body1 text_color2">Landing Pages</p>
+                                    <div class="grpd-pb-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">5 pages</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check  icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Custom domain</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Drag and drop editor</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Custom CSS and JS</span>
+                                    </div>
+                                </div>
+                                <div class="grpd-py-20">
+                                    <p class="grpd-body1 text_color2">Forms & Popups</p>
+                                    <div class="grpd-pb-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Simple and Intuitive Editor</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check  icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Embeddable form</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Popups and Lead capture</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Real time notifications</span>
+                                    </div>
+                                </div>
+                                <div class="grpd-text-align-center">
+                                    <a href="#"
+                                        class="grpd-button-primary-theme_primary grpd-display-flex grpd-justify-content-center grpd-align-items-center grpd-py-12 grpd-border-color-theme_primary grpd-border "
+                                        target="_blank" rel="noopener noreferrer">Subscribe Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grpd-col-lg-6 grpd-col-md-12 grpd-col-xs-12  grpd-px-16 border_left ">
+
+                            <div class="grpd-pt-32">
+
+                                <h2 class="header_color grpd-pl-10 grpd-pt-10  grpd-h4-med header_color">Standalone Plan</h2>
+                                <div class="grpd-row grpd-pt-24 grpd-justify-content-evenly">
+                                    <div class="grpd-col-lg-12  grpd-px-10 grpd-py-20">
+                                        <div
+                                            class="card_bg_color1 grpd-px-lg-32 grpd-py-lg-24 grpd-px-10 grpd-py-16  grpd-border grpd-border-radius-10">
+                                            <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start">
+                                                <img src="https://grorapidassets.s3.amazonaws.com/images/Pricing/sms.png"
+                                                    alt="icon" class="icon_width" />
+                                            </div>
+                                            <h5 class=" grpd-font-weight-600 header_color ">
+                                                Email Marketing
+                                            </h5>
+
+                                            <p class="grpd-p grpd-font-weight-300 pra_color ">
+                                                Unlimited emails with all the other free plan services.
+                                            </p>
+                                            <div class="grpd-row">
+                                                <div class="grpd-col-lg-6">
+                                                    <span class="grpd-h4-med header_color">$12</span> <span
+                                                        class="grpd-p grpd-mb-0">
+                                                        /month</span>
+                                                </div>
+                                                <div
+                                                    class="grpd-col-lg-6 grpd-display-flex justify-content-center grpd-align-items-center">
+                                                    <a href="#" class="grpd-pt-lg-4 icon_color">Subscibe now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grpd-col-lg-12  grpd-px-10 grpd-py-20">
+                                        <div
+                                            class="card_bg_color1 grpd-px-lg-32 grpd-py-lg-24 grpd-px-10 grpd-py-16  grpd-border grpd-border-radius-10">
+                                            <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start">
+                                                <img src="https://grorapidassets.s3.amazonaws.com/images/Pricing/monitor.png"
+                                                    alt="icon" class="icon_width" />
+                                            </div>
+                                            <h5 class=" grpd-font-weight-600 header_color ">
+                                                Landing Pages
+                                            </h5>
+
+                                            <p class="grpd-p grpd-font-weight-300 pra_color ">
+                                                Unlimited emails with all the other free plan services.
+                                            </p>
+                                            <div class="grpd-row">
+                                                <div class="grpd-col-lg-6">
+                                                    <span class="grpd-h4-med header_color">$12</span> <span
+                                                        class="grpd-p grpd-mb-0">
+                                                        /month</span>
+                                                </div>
+                                                <div
+                                                    class="grpd-col-lg-6 grpd-display-flex justify-content-center grpd-align-items-center">
+                                                    <a href="#" class="grpd-pt-lg-4 icon_color">Subscibe now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grpd-col-lg-12  grpd-px-16 grpd-py-20">
+                                        <div
+                                            class="card_bg_color1 grpd-px-lg-32 grpd-py-lg-24 grpd-px-18 grpd-py-16  grpd-border grpd-border-radius-10">
+                                            <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start">
+                                                <img src="https://grorapidassets.s3.amazonaws.com/images/Pricing/icon3.png"
+                                                    alt="icon" class="icon_width" />
+                                            </div>
+                                            <h5 class=" grpd-font-weight-600 header_color ">
+                                                Forms & Popups
+                                            </h5>
+
+                                            <p class="grpd-p grpd-font-weight-300 pra_color ">
+                                                Unlimited emails with all the other free plan services.
+                                            </p>
+                                            <div class="grpd-row">
+                                                <div class="grpd-col-lg-6">
+                                                    <span class="grpd-h4-med header_color">$12</span> <span
+                                                        class="grpd-p grpd-mb-0">
+                                                        /month</span>
+                                                </div>
+                                                <div
+                                                    class="grpd-col-lg-6 grpd-display-flex justify-content-center grpd-align-items-center">
+                                                    <a href="#" class="grpd-pt-lg-4 icon_color">Subscibe now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+</body>
+<html>

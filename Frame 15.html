@@ -1,0 +1,1262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Page title</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Description">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://rapidtech.s3.amazonaws.com/assets/framework_theme.css" rel="stylesheet">
+    <link href="https://rapidtech.s3.amazonaws.com/assets/framework.css" rel="stylesheet">
+    <link href="https://rapidtech.s3.amazonaws.com/assets/plugin_theme.css" rel="stylesheet">
+    <link href="https://rapidtech.s3.amazonaws.com/assets/framework1.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://platform-staging.grorapid.com/assets/css/portal/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158951641-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-158951641-2');
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            --theme_primary: #2F80ED;
+            --theme_light: #F9FAFB;
+            --theme_text_primary: #333333;
+            --theme_text_secondary: #4F4F4F;
+            --theme_text_tertiary: #B0B0B0;
+            --font_family: Open Sans, sans-serif;
+        }
+
+        .font {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 25px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #367BEE;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 25px;
+            width: 25px;
+            left: 5px;
+
+
+            background-color: #F7F8FA;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #e7e7e7;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        .header_color {
+            color: #112D5C;
+        }
+
+        .pra_color {
+            color: #61718B;
+        }
+
+        .bg_color1 {
+            background-color: #367BEE;
+        }
+
+        .text_color1 {
+            color: #425466;
+        }
+
+        .icon_color {
+            color: #367BEE;
+        }
+
+        .text_color2 {
+            color: #687DA3;
+        }
+
+        .icon_width {
+            width: 50px;
+        }
+
+        .link_color {
+            color: #4F8EF7;
+        }
+
+        .btn_primary {
+            background-color: #4F8EF7;
+            color: #FFFFFF;
+            transition: 500ms;
+        }
+
+        .btn_primary:hover {
+            color: #f7f0f0;
+            background-color: rgba(136, 53, 231, 0.849);
+            transition: 500ms;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .position_icon {
+            position: absolute;
+            right: -40px;
+            top: -1px;
+
+        }
+
+        .icon_text {
+            color: #BDBDBD;
+        }
+
+        .border_left {
+            border-left: 1px solid #dee2e6;
+        }
+
+        /* media */
+        @media only screen and (max-width: 990px) {
+            .position_icon {
+                display: none;
+            }
+
+           
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="grpd-wrapper grpd-background-color-theme_light grpd-py-32 grpd-font-weight-400 ">
+        <div class="grpd-container-xxl  grpd-py-32 grpd-mx-auto">
+            <div class="grpd-">
+
+                <div class="  grpd-row">
+                    <div class="grpd-col-lg-9 grpd-col-md-7"></div>
+                    <div class="grpd-col-lg-3 grpd-col-md-5">
+                        <a href="#"
+                            class="grpd-button-secondary-theme_primary grpd-ml-16 grpd-border grpd-font-weight-500 grpd-border-color-theme_primary grpd-px-32 grpd-py-12">Sign in</a>
+
+                        <a href="#"
+                            class="grpd-button-primary-theme_primary btn_hover grpd-ml-16 grpd-border grpd-font-weight-500 grpd-border-color-theme_primary grpd-px-32 grpd-py-12">Get started</a>
+                    </div>
+                </div>
+                <div class="grpd-py-48">
+                    <h3 class="header_color grpd-h3  grpd-text-align-center"> <span
+                            class="grpd-text-color-theme_primary">Simple</span> pricing, no commitment</h3>
+                    <p class="pra_color grpd-font-weight-300 grpd-body1  grpd-text-align-center">Everything you need.
+                        Pick
+                        what work's best for you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="grpd-wrapper grpd-font-weight-400 ">
+        <div class="grpd-container-xxl  grpd-py-32 grpd-mx-auto">
+            <div class="grpd-text-align-center">
+                <span class="text_color1 grpd-mr-12 ">Pay Monthly</span>
+                <span><label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
+                <span class="text_color1 grpd-ml-12 " grpd-ml-12>Pay Annualy</span>
+                <span
+                    class="grpd-body1 grpd-ml-14 bg_color1 grpd-border-radius-48 grpd-font-weight-300 grpd-px-14 grpd-py-4 grpd-border-col grpd-background-color-theme_primary grpd-text-color-white">
+                    Save 20%</span>
+            </div>
+            <div class="grpd-row grpd-py-48">
+                <div class="grpd-col-lg-4 grpd-col-md-6 grpd-col-xs-12 grpd-py-10 grpd-px-8">
+
+                    <div class="grpd-border grpd-border-radius-10 grpd-py-32 grpd-px-32">
+                        <div>
+                            <h4 class="header_color grpd-h3-med">Free Forever</h4>
+                            <h3 class="header_color grpd-h3">Free</h3>
+                            <p class="grpd-p grpd-font-weight-300 pra_color">Use our free plan to get a taste of all the
+                                tools and services we provide with Grorapid.</p>
+                        </div>
+                        <div class="">
+                            <h5 class="text_color1 grpd-font-weight-400">
+                                This plan includes:
+                            </h5>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Unlimited contacts</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check  icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">1000 Email List Cleaning</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Unlimited Recipes</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i class="fa fa-times text_color2" aria-hidden="true"></i>
+                                <del><span class="grpd-pl-4  text_color2">No Grorapid Branding</span></del>
+                            </div>
+                        </div>
+                        <div class="grpd-py-20">
+                            <p class="grpd-body1 text_color2">Email Marketing</p>
+                            <div class="grpd-pb-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">1000 Emails</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check  icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">High Deliverability with AWS</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Drag and drop editor</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Rich text editor</span>
+                            </div>
+                        </div>
+                        <div class="grpd-py-20">
+                            <p class="grpd-body1 text_color2">Landing Pages</p>
+                            <div class="grpd-pb-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">5 pages</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check  icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Custom domain</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Drag and drop editor</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i class="fa fa-times text_color2" aria-hidden="true"></i>
+                                <del><span class="grpd-pl-4  text_color2">Custom CSS and JS</span></del>
+                            </div>
+                        </div>
+                        <div class="grpd-py-20">
+                            <p class="grpd-body1 text_color2">Forms & Popups</p>
+                            <div class="grpd-pb-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Simple and Intuitive Editor</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check  icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Embeddable form</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i aria-hidden="true" class="fa fa-check icon_color">
+                                </i>
+                                <span class="grpd-pl-4  text_color1">Popups and Lead capture</span>
+                            </div>
+                            <div class="grpd-py-8">
+                                <i class="fa fa-times text_color2" aria-hidden="true"></i>
+                                <del><span class="grpd-pl-4  text_color2">Real time notifications</span></del>
+                            </div>
+                        </div>
+                        <div class="grpd-text-align-center">
+                            <a href="#"
+                                class="grpd-button-secondary-theme_primary grpd-display-flex grpd-justify-content-center grpd-align-items-center grpd-py-12 grpd-border-color-theme_primary grpd-border "
+                                target="_blank" rel="noopener noreferrer">Get started for free</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="grpd-col-lg-8 grpd-col-md-6 grpd-col-xs-12 grpd-py-10 grpd-pl-8">
+                    <div class="grpd-row grpd-border grpd-border-radius-10   grpd-px-18">
+                        <div class="grpd-col-lg-6 grpd-col-md-12 grpd-col-xs-12 ">
+                            <div class="grpd-px-16 grpd-py-32  ">
+                                <div class="relative">
+                                    <div>
+                                        <h2 class="header_color  grpd-h3-med icon_color">Grorapid Pro</h2>
+                                    </div>
+                                    <div class="position_icon">
+                                        <img src="https://grorapidassets.s3.amazonaws.com/images/Pricing/arrow.png"
+                                            alt="" srcset="">
+                                    </div>
+                                    <span class="header_color grpd-h3">$35 </span><span>/ month</span>
+                                    <p class="grpd-p grpd-font-weight-300  grpd-pt-8 pra_color">Use our free plan to get
+                                        a taste of all the
+                                        tools and services we provide with Grorapid.</p>
+                                </div>
+                                <div class="">
+                                    <h5 class="text_color1 grpd-font-weight-400">
+                                        This plan includes:
+                                    </h5>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Unlimited contacts</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check  icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">1000 Email List Cleaning</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Unlimited Recipes</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">No Grorapid Branding</span>
+                                    </div>
+                                </div>
+                                <div class="grpd-py-20">
+                                    <p class="grpd-body1 text_color2">Email Marketing</p>
+                                    <div class="grpd-pb-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">1000 Emails</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check  icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">High Deliverability with AWS</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Drag and drop editor</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Rich text editor</span>
+                                    </div>
+                                </div>
+                                <div class="grpd-py-20">
+                                    <p class="grpd-body1 text_color2">Landing Pages</p>
+                                    <div class="grpd-pb-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">5 pages</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check  icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Custom domain</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Drag and drop editor</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Custom CSS and JS</span>
+                                    </div>
+                                </div>
+                                <div class="grpd-py-20">
+                                    <p class="grpd-body1 text_color2">Forms & Popups</p>
+                                    <div class="grpd-pb-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Simple and Intuitive Editor</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check  icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Embeddable form</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Popups and Lead capture</span>
+                                    </div>
+                                    <div class="grpd-py-8">
+                                        <i aria-hidden="true" class="fa fa-check icon_color">
+                                        </i>
+                                        <span class="grpd-pl-4  text_color1">Real time notifications</span>
+                                    </div>
+                                </div>
+                                <div class="grpd-text-align-center">
+                                    <a href="#"
+                                        class="grpd-button-primary-theme_primary grpd-display-flex grpd-justify-content-center grpd-align-items-center grpd-py-12 grpd-border-color-theme_primary grpd-border "
+                                        target="_blank" rel="noopener noreferrer">Subscribe Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grpd-col-lg-6 grpd-col-md-12 grpd-col-xs-12  grpd-px-16 border_left">
+
+                            <div class="grpd-pt-32">
+
+                                <h2 class="header_color grpd-pl-10 grpd-pt-10  grpd-h4-med header_color">Standalone Plan
+                                </h2>
+                                <div class="grpd-row grpd-pt-24 grpd-justify-content-evenly">
+                                    <div class="grpd-col-lg-12  grpd-px-10 grpd-py-20">
+                                        <div
+                                            class="card_bg_color1 grpd-px-lg-32 grpd-py-lg-24 grpd-px-10 grpd-py-16  grpd-border grpd-border-radius-10">
+                                            <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start">
+                                                <img src="https://grorapidassets.s3.amazonaws.com/images/Pricing/sms.png"
+                                                    alt="icon" class="icon_width" />
+                                            </div>
+                                            <h5 class=" grpd-font-weight-600 header_color ">
+                                                Email Marketing
+                                            </h5>
+
+                                            <p class="grpd-p grpd-font-weight-300 pra_color ">
+                                                Unlimited emails with all the other free plan services.
+                                            </p>
+                                            <div class="grpd-row">
+                                                <div class="grpd-col-lg-6">
+                                                    <span class="grpd-h4-med header_color">$12</span> <span
+                                                        class="grpd-p grpd-mb-0">
+                                                        /month</span>
+                                                </div>
+                                                <div
+                                                    class="grpd-col-lg-6 grpd-display-flex justify-content-center grpd-align-items-center">
+                                                    <a href="#" class="grpd-pt-lg-4 icon_color">Subscibe now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grpd-col-lg-12  grpd-px-10 grpd-py-20">
+                                        <div
+                                            class="card_bg_color1 grpd-px-lg-32 grpd-py-lg-24 grpd-px-10 grpd-py-16  grpd-border grpd-border-radius-10">
+                                            <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start">
+                                                <img src="https://grorapidassets.s3.amazonaws.com/images/Pricing/monitor.png"
+                                                    alt="icon" class="icon_width" />
+                                            </div>
+                                            <h5 class=" grpd-font-weight-600 header_color ">
+                                                Landing Pages
+                                            </h5>
+
+                                            <p class="grpd-p grpd-font-weight-300 pra_color ">
+                                                Unlimited emails with all the other free plan services.
+                                            </p>
+                                            <div class="grpd-row">
+                                                <div class="grpd-col-lg-6">
+                                                    <span class="grpd-h4-med header_color">$12</span> <span
+                                                        class="grpd-p grpd-mb-0">
+                                                        /month</span>
+                                                </div>
+                                                <div
+                                                    class="grpd-col-lg-6 grpd-display-flex justify-content-center grpd-align-items-center">
+                                                    <a href="#" class="grpd-pt-lg-4 icon_color">Subscibe now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grpd-col-lg-12  grpd-px-10 grpd-py-20">
+                                        <div
+                                            class="card_bg_color1 grpd-px-lg-32 grpd-py-lg-24 grpd-px-10 grpd-py-16  grpd-border grpd-border-radius-10">
+                                            <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start">
+                                                <img src="https://grorapidassets.s3.amazonaws.com/images/Pricing/icon3.png"
+                                                    alt="icon" class="icon_width" />
+                                            </div>
+                                            <h5 class=" grpd-font-weight-600 header_color ">
+                                                Forms & Popups
+                                            </h5>
+
+                                            <p class="grpd-p grpd-font-weight-300 pra_color ">
+                                                Unlimited emails with all the other free plan services.
+                                            </p>
+                                            <div class="grpd-row">
+                                                <div class="grpd-col-lg-6">
+                                                    <span class="grpd-h4-med header_color">$12</span> <span
+                                                        class="grpd-p grpd-mb-0">
+                                                        /month</span>
+                                                </div>
+                                                <div
+                                                    class="grpd-col-lg-6 grpd-display-flex justify-content-center grpd-align-items-center">
+                                                    <a href="#" class="grpd-pt-lg-4 icon_color">Subscibe now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- table -->
+            <h3 class="grpd-h3 header_color grpd-text-align-center ">Compare plans</h3>
+            <p class="grpd-body1 grpd-font-weight-300 grpd-text-align-center  pra_color">3 simple steps to get you going
+                with your marketing workflows within</p>
+            <div class="grpd-py-32">
+                <div
+                    class="grpd-row grpd-background-color-theme_light grpd-py-lg-20 grpd-px-12 grpd-px-lg-32 grpd-px-md-20 grpd-py-md-32 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <h5 class="header_color">All-in-one</h5>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3 grpd-px-4  grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center grpd-col-xs-4">
+                        <h5 class="icon_color"> Pro </h5>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2  grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <h5 class="header_color">Free </h5>
+                    </div>
+                </div>
+
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Price</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center grpd-col-xs-4">
+                        <p class="grpd-text-color-theme_primary">$35/Month</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="pra_color">$00/Month</p>
+                    </div>
+                </div>
+
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Contacts</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center  grpd-col-xs-4">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2  grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Email List Cleaning</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center grpd-col-xs-4">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="text_color2">1000</p>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Email</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center grpd-col-xs-4">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="text_color2">1000</p>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">High Deliverability with Aws</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center  grpd-col-xs-4">
+                        <i aria-hidden="true" class="fa fa-check icon_color grpd-pl-10">
+                        </i>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <i aria-hidden="true" class="fa fa-check icon_color grpd-pl-10">
+                        </i>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Drag and drop Editor</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center  grpd-col-xs-4">
+                        <i aria-hidden="true" class="fa fa-check icon_color grpd-pl-10">
+                        </i>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <i aria-hidden="true" class="fa fa-check icon_color grpd-pl-10"></i>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Pages</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center  grpd-col-xs-4">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="text_color2">5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grpd-py-32">
+                <div
+                    class="grpd-row grpd-background-color-theme_light grpd-py-lg-20 grpd-px-12 grpd-px-lg-32 grpd-px-md-20 grpd-py-md-32 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <h5 class="header_color">Email Marketing</h5>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3 grpd-px-4  grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center grpd-col-xs-4">
+                        <h5 class="icon_color"> Pro </h5>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2  grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <h5 class="header_color">Free </h5>
+                    </div>
+                </div>
+
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Price</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center grpd-col-xs-4">
+                        <p class="grpd-text-color-theme_primary">$35/Month</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="pra_color">$00/Month</p>
+                    </div>
+                </div>
+
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Contacts</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center  grpd-col-xs-4">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2  grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Email List Cleaning</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center grpd-col-xs-4">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="text_color2">1000</p>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Email</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center grpd-col-xs-4">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="text_color2">1000</p>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">High Deliverability with Aws</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center  grpd-col-xs-4">
+                        <i aria-hidden="true" class="fa fa-check icon_color grpd-pl-10">
+                        </i>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <i aria-hidden="true" class="fa fa-check icon_color grpd-pl-10">
+                        </i>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Drag and drop Editor</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center  grpd-col-xs-4">
+                        <i aria-hidden="true" class="fa fa-check icon_color grpd-pl-10">
+                        </i>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <i aria-hidden="true" class="fa fa-check icon_color grpd-pl-10"></i>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Pages</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center  grpd-col-xs-4">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="text_color2">5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grpd-py-32">
+                <div
+                    class="grpd-row grpd-background-color-theme_light grpd-py-lg-20 grpd-px-12 grpd-px-lg-32 grpd-px-md-20 grpd-py-md-32 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <h5 class="header_color">Landing Pages</h5>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3 grpd-px-4  grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center grpd-col-xs-4">
+                        <h5 class="icon_color"> Pro </h5>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2  grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <h5 class="header_color">Free </h5>
+                    </div>
+                </div>
+
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Price</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center grpd-col-xs-4">
+                        <p class="grpd-text-color-theme_primary">$35/Month</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="pra_color">$00/Month</p>
+                    </div>
+                </div>
+
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Contacts</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center  grpd-col-xs-4">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2  grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Email List Cleaning</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center grpd-col-xs-4">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="text_color2">1000</p>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Email</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center grpd-col-xs-4">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="text_color2">1000</p>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">High Deliverability with Aws</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center  grpd-col-xs-4">
+                        <i aria-hidden="true" class="fa fa-check icon_color grpd-pl-10">
+                        </i>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <i aria-hidden="true" class="fa fa-check icon_color grpd-pl-10">
+                        </i>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Drag and drop Editor</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center  grpd-col-xs-4">
+                        <i aria-hidden="true" class="fa fa-check icon_color grpd-pl-10">
+                        </i>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <i aria-hidden="true" class="fa fa-check icon_color grpd-pl-10"></i>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Pages</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center  grpd-col-xs-4">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="text_color2">5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grpd-py-32">
+                <div
+                    class="grpd-row grpd-background-color-theme_light grpd-py-lg-20 grpd-px-12 grpd-px-lg-32 grpd-px-md-20 grpd-py-md-32 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <h5 class="header_color">Forms & Popups</h5>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3 grpd-px-4  grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center grpd-col-xs-4">
+                        <h5 class="icon_color"> Pro </h5>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2  grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <h5 class="header_color">Free </h5>
+                    </div>
+                </div>
+
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Price</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center grpd-col-xs-4">
+                        <p class="grpd-text-color-theme_primary">$35/Month</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="pra_color">$00/Month</p>
+                    </div>
+                </div>
+
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Contacts</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center  grpd-col-xs-4">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2  grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Email List Cleaning</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center grpd-col-xs-4">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="text_color2">1000</p>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Email</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center grpd-col-xs-4">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="text_color2">1000</p>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">High Deliverability with Aws</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center  grpd-col-xs-4">
+                        <i aria-hidden="true" class="fa fa-check icon_color grpd-pl-10">
+                        </i>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <i aria-hidden="true" class="fa fa-check icon_color grpd-pl-10">
+                        </i>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Drag and drop Editor</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center  grpd-col-xs-4">
+                        <i aria-hidden="true" class="fa fa-check icon_color grpd-pl-10">
+                        </i>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <i aria-hidden="true" class="fa fa-check icon_color grpd-pl-10"></i>
+                    </div>
+                </div>
+                <div
+                    class="grpd-row  grpd-py-lg-20 grpd-px-12 grpd-border-bottom  grpd-px-lg-32 grpd-px-md-32 grpd-py-md-20 grpd-py-10">
+                    <div class="grpd-col-lg-3 grpd-col-md-5  grpd-px-4 grpd-col-xs-3 ">
+                        <p class="header_color">Pages</p>
+                    </div>
+                    <div class="grpd-col-lg-3 grpd-col-md-3   grpd-col-xs-1">
+
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 grpd-px-4 grpd-display-flex grpd-justify-content-center  grpd-col-xs-4">
+                        <p class="text_color2">Unlimited</p>
+                    </div>
+                    <div
+                        class="grpd-col-lg-3 grpd-col-md-2 pra_color grpd-px-4 grpd-col-xs-4 grpd-display-flex grpd-justify-content-center">
+                        <p class="text_color2">5</p>
+                    </div>
+                </div>
+            </div>
+            <!-- table end -->
+
+            <!-- contact us -->
+            <div class="grpd-row grpd-justify-content-center grpd-py-lg-152 grpd-py-md-100 grpd-py-32">
+                <div
+                    class="grpd-col-lg-7 grpd-col-md-12 grpd-col-xs-12 grpd-display-flex grpd-justify-content-center grpd-flex-column">
+                    <h3 class="grpd-h3 grpd-text-align-center grpd-pt-8">Ready to accelerate your growth with
+                    </h3>
+                    <h3 class="grpd-h3 grpd-text-align-center grpd-text-color-theme_primary "> Grorapid
+                    </h3>
+
+                </div>
+                <div class="grpd-col-lg-6 grpd-col-md-12 grpd-col-xs-12 grpd-display-flex grpd-align-items-center">
+                    <div class="grpd-row grpd-py-16 grpd-flex-column">
+                        <form idf="49834714560775900" formstate="normal" class="grpd-justify-content-center grpd-row">
+                            <input type="email" name="contact_email" placeholder="Enter your email"
+                                class="grpd-form-input-control grpd-border-radius-4 grpd-mt-8 grpd-border grpd-mr-0 grpd-border-color-theme_primary grpd-font-weight-400 grpd-width-lg-60 grpd-width-md-70" />
+                            <button role="button" type="submit"
+                                class="btn_primary grpd-border-radius-4  grpd-text-color-white grpd-border  grpd-mt-8 grpd-px-32 grpd-py-12 grpd-font-weight-500">Start
+                                for free</button>
+                        </form>
+                    </div>
+
+                </div>
+                <div
+                    class="grpd-col-lg-7 grpd-col-md-12 grpd-col-xs-12 grpd-py-12 grpd-display-flex  grpd-justify-content-center grpd-align-items-center">
+                    <div class="grpd-col-lg-7 grpd-col-md-8 grpd-col-xs-12 ">
+                        <i aria-hidden="true" class="fa fa-check link_color grpd-pr-10">
+                        </i> <span class="icon_text grpd-body1">Start for Free</span>
+                        <i aria-hidden="true" class="fa fa-check link_color grpd-pl-20 grpd-pr-10">
+                        </i> <span class="icon_text grpd-body1">No Card required</span>
+                        <i aria-hidden="true" class="fa fa-check link_color grpd-pl-20 grpd-pr-10">
+                        </i> <span class="icon_text grpd-body1">Free Migration</span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- contact us end -->
+        </div>
+
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="grpd-wrapper grpd-font-weight-400 grpd-py-32 grpd-px-32  grpd-background-color-theme_primary">
+        <div class="grpd-container-xxl grpd-mx-auto">
+            <div class="grpd-row">
+                <div class="grpd-col-lg-12  grpd-col-md-12 grpd-col-xs-12 grpd-display-flex grpd-flex-column">
+                    <h3 class="grpd-h3 grpd-text-color-white grpd-mt-8 grpd-py-16">grorapid
+                    </h3>
+                </div>
+                <div class="grpd-col-lg-12 grpd-col-md-12 grpd-mx-auto">
+                    <div class="grpd-row grpd-justify-content-between">
+                        <div class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-12 grpd-py-16">
+                            <div>
+                                <h6 class="grpd-h5 grpd-text-color-white  grpd-font-weight-600 ">Company </h6>
+                            </div>
+                            <div class="grpd-py-2">
+                                <a href="#" class="grpd-p grpd-text-color-white grpd-link-hover-white">We are
+                                    hiring </a>
+                            </div>
+                            <div class="grpd-py-2">
+                                <a href="#" class="grpd-p grpd-text-color-white grpd-link-hover-white">About Us
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-12 grpd-py-16">
+                            <div>
+                                <h6 class="grpd-h5 grpd-text-color-white  grpd-font-weight-600 ">Legal </h6>
+                            </div>
+                            <div class="grpd-py-2">
+                                <a href="#" class="grpd-p grpd-text-color-white grpd-link-hover-white">Terms &
+                                    Conditions
+                                </a>
+                            </div>
+                            <div class="grpd-py-2">
+                                <a href="#" class="grpd-p grpd-text-color-white grpd-link-hover-white">Privacy
+                                    Policy </a>
+                            </div>
+                        </div>
+                        <div class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-12 grpd-py-16">
+                            <div>
+                                <h6 class="grpd-h5 grpd-text-color-white  grpd-font-weight-600 ">Knowledge </h6>
+                            </div>
+                            <div class="grpd-py-2">
+                                <a href="#" class="grpd-p grpd-text-color-white grpd-link-hover-white">Blog</a>
+                            </div>
+                            <div class="grpd-py-2">
+                                <a href="#" class="grpd-p grpd-text-color-white grpd-link-hover-white">Help
+                                    Center </a>
+                            </div>
+                        </div>
+                        <div class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-12 grpd-py-16">
+                            <div>
+                                <h6 class="grpd-h5 grpd-text-color-white  grpd-font-weight-600 ">Tools</h6>
+                            </div>
+                            <div class="grpd-py-2">
+                                <a href="#" class="grpd-p grpd-text-color-white grpd-link-hover-white">Free
+                                    Email Cleaning
+                                    Tool </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="grpd-row grpd-border-top border_color  grpd-text-color-white grpd-py-32">
+                <div class="grpd-col-lg-3 grpd-col-md-12">
+                    <p class="grpd-body1">© Copyright 2020 - Grorapid. All rights reserved
+                    </p>
+                </div>
+                <div class="grpd-col-lg-7  grpd-col-md-12">
+                    <div class="grpd-text-align-center grpd-text-color-text_secondary">
+                        <a href="#" class="grpd-text-color-theme_light grpd-link-hover-white grpd-p-sm grpd-mx-8"><i
+                                class="fab fa-instagram">
+                            </i></a>
+                        <a href="#" class="grpd-text-color-theme_light grpd-link-hover-white grpd-p-sm grpd-mx-8"><i
+                                class="fab fa-twitter-square">
+                            </i></a>
+                        <a href="#" class="grpd-text-color-theme_light grpd-link-hover-white grpd-p-sm grpd-mx-8"><i
+                                class="fab fa-facebook-square">
+                            </i></a>
+
+
+                        <a href="#" class="grpd-text-color-theme_light grpd-link-hover-white grpd-p-sm grpd-mx-8"><i
+                                class="fab fa-linkedin">
+                            </i></a>
+
+
+
+                    </div>
+                </div>
+                <div class="grpd-col-lg-2 grpd-col-md-12">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer end -->
+</body>
+<html>

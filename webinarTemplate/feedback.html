@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Page title</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="Description">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://rapidtech.s3.amazonaws.com/assets/framework_theme.css" rel="stylesheet">
+  <link href="https://rapidtech.s3.amazonaws.com/assets/framework.css" rel="stylesheet">
+  <link href="https://rapidtech.s3.amazonaws.com/assets/plugin_theme.css" rel="stylesheet">
+  <link href="https://rapidtech.s3.amazonaws.com/assets/framework1.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://platform-staging.grorapid.com/assets/css/portal/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+
+
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+    }
+  </style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158951641-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-158951641-2');
+  </script>
+</head>
+
+<body>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .grpd-border-color-white {
+      border-color: white;
+    }
+
+    .grpd-text-color-white {
+      color: white;
+    }
+
+    .grpd-background-color-white {
+      background-color: white;
+    }
+
+    .grpd-border-color-black {
+      border-color: black;
+    }
+
+    .grpd-text-color-black {
+      color: black;
+    }
+
+    .grpd-background-color-black {
+      background-color: black;
+    }
+
+    .grpd-border-color-feedback_color_1 {
+      border-color: #3CCAC4;
+    }
+
+    .grpd-text-color-feedback_color_1 {
+      color: #3CCAC4;
+    }
+
+    .grpd-background-color-feedback_color_1 {
+      background-color: #3CCAC4;
+    }
+
+    .grpd-border-color-feedback_color_2 {
+      border-color: #F6FBFA;
+    }
+
+    .grpd-text-color-feedback_color_2 {
+      color: #F6FBFA;
+    }
+
+    .grpd-background-color-feedback_color_2 {
+      background-color: #F6FBFA;
+    }
+
+    .grpd-border-color-feedback_color_3 {
+      border-color: #4F4F4F;
+    }
+
+    .grpd-text-color-feedback_color_3 {
+      color: #4F4F4F;
+    }
+
+    .grpd-background-color-feedback_color_3 {
+      background-color: #4F4F4F;
+    }
+
+    .grpd-border-color-feedback_color_4 {
+      border-color: #222222;
+    }
+
+    .grpd-text-color-feedback_color_4 {
+      color: #222222;
+    }
+
+    .grpd-background-color-feedback_color_4 {
+      background-color: #222222;
+    }
+
+
+    .font_family_feedback_template_3 {
+     font-family: 'Raleway', sans-serif;
+    }
+
+
+
+    .icon_hover:hover {
+      color: #06cfc8e1;
+    }
+
+    .logo_right {
+      display: none;
+    }
+
+
+    .btn_primary {
+      background-color: #06CFC7;
+      color: #FFFFFF;
+      transition: 500ms;
+    }
+
+    .btn_primary:hover {
+      color: #f7f0f0;
+      background-color: #06cfc8e3;
+      transition: 500ms;
+    }
+
+    .btn_primary1 {
+      background-color: #000000;
+      color: #FFFFFF;
+      transition: 500ms;
+    }
+
+    .btn_primary1:hover {
+      color: #f7f0f0;
+      background-color: #000000;
+      transition: 500ms;
+    }
+
+    .btn_secondary {
+      background-color: #ffffff;
+      color: #3CCAC4;
+      transition: 500ms;
+    }
+
+    .btn_secondary:hover {
+      color: #3ccac3ce;
+      background-color: #ffffffe1;
+      transition: 500ms;
+    }
+
+    .bg_color {
+      background-color: rgba(246, 251, 250, 0.98)
+    }
+
+    .text_color {
+      color: #5D6970;
+    }
+
+    .star_color {
+      color: #A6A985;
+    }
+
+    .text_position {
+      top: 200px;
+      left: 120px;
+
+    }
+
+    .grpd-form-input-control {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0.75rem 0.75rem;
+      line-height: 1.5rem;
+      color: black;
+    }
+
+    .grpd-form-input-control {
+      border: 1px solid #B0B0B0;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+      outline: unset;
+    }
+
+    .grpd-form-input-control:hover,
+    .grpd-form-input-control:focus,
+    .grpd-form-input-control:focus-visible,
+    .grpd-form-input-control:active {
+      border: 1px solid #B0B0B0;
+      outline: unset;
+    }
+
+    .border {
+      border: 1px solid #F6FBFA;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .line {
+      border-top: 1px solid #07C47E;
+      ;
+    }
+
+    .footer_color {
+      background-color: #181D25;
+    }
+
+    #grpd-background-image1 {
+      background-image: url("https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Feedback2/bg_iamge.png");
+      background-size: cover;
+    }
+ 
+  </style>
+  <!-- logo section -->
+  <!-- Section1 -->
+  <section id="grpd-background-image1" class="grpd-wrapper font_family_feedback_template_3 grpd-pb-48 grpd-py-20 ">
+    <div   class="grpd-container-xxl grpd-border-radius-10 grpd-mx-auto grpd-text-color-white">
+  <a href="#" class="navbar-brand  ">
+    <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Feedback2/logo.png"
+      class="grpd-width-15" /></a>
+      <div class="grpd-row    grpd-py-20 grpd-px-16  ">
+        <div class="grpd-col-lg-5 grpd-col-md-9 grpd-col-xs-12 grpd-display-flex   grpd-align-items-center">
+       <div class="grpd-col-lg-10 grpd-col-md-10 grpd-col-xs-12">
+          <h2 class=" grpd-h2 ">   
+        Create your Fututre with us
+          </h2>
+          <p class="grpd-p grpd-py-20 grpd-font-weight-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at ante efficitur, feugiat mauris id,
+            pellentesque felis.
+          </p>
+              <div class="grpd-py-20">
+                <a href="#"
+                  class=" btn_primary  grpd-px-48   grpd-py-16 grpd-fontWeight-500 grpd-border grpd-border-color-feedback_color_1">About Us</a>
+              </div>
+              </div>
+        </div>
+          <div   class="grpd-col-lg-7  grpd-col-md-12 grpd-col-xs-12 grpd-display-flex  grpd-flex-column grpd-justify-content-center grpd-align-items-center">
+            <div class="grpd-border  grpd-background-color-white   ">
+              <form method="POST" idf="4243138578342132" formstate="normal"
+                class="grpd-mx-auto  grpd-width-lg-100 grpd-width-md-90 grpd-width-xs-100 grpd-px-28 grpd-py-32">
+                <h3 class="grpd-h4 grpd-text-color-feedback_color_4 grpd-mb-24">START YOUR EDUCATION NOW
+                </h3>
+          
+                <div class="grpd-form-group">
+                  <input type="text" name="${FORM_KEYS.name}" placeholder="Full Name" required
+                    class="grpd-form-input-control  grpd-border grpd-font-weight-400" />
+                </div>
+                <div class="grpd-form-group">
+                  <input type="email" name="${FORM_KEYS.email}"placeholder="Email" required
+                    class="grpd-form-input-control  grpd-border grpd-font-weight-400" />
+                </div>
+          <div class="grpd-form-group">
+            <input type="password" name="${FORM_KEYS.password}" placeholder="Password" required
+              class="grpd-form-input-control  grpd-border grpd-font-weight-400" />
+          </div>
+                <button role="button" type="submit"
+                  class="btn_primary grpd-border  grpd-width-100 grpd-px-28 grpd-py-12 grpd-font-weight-500">Submit</button>
+              </form>
+              <div
+                class=" grpd-background-color-feedback_color_2 grpd-border-top grpd-px-32 grpd-width-lg-100 grpd-pt-32 grpd-pb-24 grpd-width-xs-100">
+                <p class="grpd-body1 grpd-mb-0 grpd-text-color-feedback_color_3">By signing up, you agree to our
+                  <span class="grpd-font-weight-500 grpd-text-color-feedback_color_3"><a href="# " class="grpd-text-color-feedback_color_3 grpd-link-hover-black"> Terms, Data policy </a></span> and
+                  <span class="grpd-font-weight-500 grpd-text-color-feedback_color_3"> <a href="# " class="grpd-text-color-feedback_color_3 grpd-link-hover-black">Cookies policiy</a></span>
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Section2 -->
+  <section class="grpd-wrapper grpd-py-48 font_family_feedback_template_3 grpd-background-color-feedback_color_2 grpd-font-weight-400">
+    <div class="grpd-container-xxl grpd-mx-auto">
+      <div class="grpd-row  grpd-flex-column-reverse grpd-flex-lg-row">
+        <div
+          class="grpd-col-lg-6 grpd-col-md-10 grpd-col-xs-12 grpd-py-32 grpd-px-lg-72    grpd-display-flex grpd-justify-content-center grpd-flex-column">
+          <h2 class=" grpd-h2=3 grpd-text-color-feedback_color_4 ">
+            About Us
+          </h2>
+  
+          <p class="grpd-p grpd-text-color-feedback_color_3 grpd-py-16">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis arcu in tincidunt sed imperdiet etiam
+            fames. Tincidunt augue risus mattis eget sem habitant id ultrices augue. Sit rhoncus .</p>
+  
+          <div class="grpd-py-16">
+            <div class=" grpd-display-flex grpd-py-4 ">
+              <div
+                class="grpd-width-px-28 grpd-px-10 grpd-display-inline-flex grpd-justify-content-center grpd-align-items-center grpd-height-px-28 grpd-mr-16 grpd-border grpd-border-circle grpd-background-color-feedback_color_1">
+                <i aria-hidden="true" class="fa fa-check grpd-text-color-white">
+                </i>
+              </div>
+              <div class="grpd-col-lg-10 grpd-col-md-12 grpd-col-xs-12">
+                <p class="grpd-p grpd-text-color-feedback_color_3 grpd-font-weight-500">
+                  Innovative website design
+                </p>
+              </div>
+            </div>
+            <div class=" grpd-display-flex grpd-py-4 ">
+              <div
+                class="grpd-width-px-28 grpd-px-10 grpd-display-inline-flex grpd-justify-content-center grpd-align-items-center grpd-height-px-28 grpd-mr-16 grpd-border grpd-border-circle grpd-background-color-feedback_color_1">
+                <i aria-hidden="true" class="fa fa-check grpd-text-color-white">
+                </i>
+              </div>
+              <div class="grpd-col-lg-10 grpd-col-md-12 grpd-col-xs-12">
+                <p class="grpd-p grpd-text-color-feedback_color_3 grpd-font-weight-500">
+                  UI/UX design with global trends
+                </p>
+              </div>
+            </div>
+            <div class=" grpd-display-flex  grpd-py-4 ">
+              <div
+                class="grpd-width-px-28 grpd-px-10 grpd-display-inline-flex grpd-justify-content-center grpd-align-items-center grpd-height-px-28 grpd-mr-16 grpd-border grpd-border-circle grpd-background-color-feedback_color_1">
+                <i aria-hidden="true" class="fa fa-check grpd-text-color-white">
+                </i>
+              </div>
+              <div class="grpd-col-lg-10 grpd-col-md-12 grpd-col-xs-12">
+                <p class="grpd-p  grpd-text-color-feedback_color_3 grpd-font-weight-500">
+                  Web and email hosting service
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grpd-col-lg-6 grpd-col-md-12 grpd-display-flex grpd-justify-content-center grpd-mt-18 ">
+  
+          <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Feedback2/girl.png" alt=""
+            class="grpd-width-lg-80 grpd-width-100" />
+        </div>
+      </div>
+  </section>
+  <!-- Section3 -->
+  <section class="font_family_feedback_template_3  grpd-background-color-feedback_color_2 grpd-wrapper grpd-py-48  ">
+    <div class="grpd-container-xxl   grpd-mx-auto">
+      <div class="grpd-py-20">
+        <h3 class="grpd-h3 grpd-text-align-center">
+          Our Courses
+        </h3>
+      </div>
+      <div class="grpd-row grpd-display-flex  grpd-justify-content-center">
+        <div class="grpd-col-md-7 grpd-col-lg-4 grpd-col-xs-12  grpd-py-16 grpd-px-16">
+          <div class=" grpd-background-color-white  ">
+            <div class=" grpd-py-16   grpd-px-16">
+              <div>
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Feedback2/card1.png"
+                  alt="image" class="grpd-object-fit-cover  grpd-width-100" />
+              </div>
+
+              <h5 class="grpd-h4 grpd-pt-16 grpd-text-color-feedback_color_4 grpd-font-weight-600">
+                UI/UX Designer
+              </h5>
+
+
+              <div>
+                <p
+                  class="grpd-text-color-feedback_color_3 grpd-body1 grpd-mb-0 grpd-text-align-start grpd-fontWeight-300">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis arcu in tincidunt sed imperdiet
+                  etiam
+                </p>
+
+              </div>
+              <div class="grpd-pt-32 ">
+                <a href="#"
+                  class=" btn_secondary grpd-display-flex grpd-justify-content-center grpd-font-weight-600 grpd-border  grpd-py-8 grpd-border-color-feedback_color_1  grpd-text-color-white  ">Buy
+                  Now</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="grpd-col-md-7 grpd-col-lg-4 grpd-col-xs-12  grpd-py-16 grpd-px-16">
+          <div class=" grpd-background-color-white  ">
+            <div class=" grpd-py-16   grpd-px-16">
+              <div>
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Feedback2/card2.png"
+                  alt="image" class="grpd-object-fit-cover  grpd-width-100" />
+              </div>
+
+              <h4 class="grpd-h4 grpd-pt-16 grpd-text-color-feedback_color_4 grpd-font-weight-600">
+                Graphic Designer
+              </h4>
+
+
+              <div>
+                <p
+                  class="grpd-text-color-feedback_color_3 grpd-body1 grpd-mb-0 grpd-text-align-start grpd-fontWeight-300">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis arcu in tincidunt sed imperdiet
+                  etiam
+                </p>
+
+              </div>
+              <div class="grpd-pt-32 ">
+                <a href="#"
+                  class=" btn_secondary grpd-display-flex grpd-justify-content-center grpd-font-weight-600 grpd-border  grpd-py-8 grpd-border-color-feedback_color_1  grpd-text-color-white  ">Buy
+                  Now</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="grpd-col-md-7 grpd-col-lg-4 grpd-col-xs-12  grpd-py-16 grpd-px-16">
+          <div class=" grpd-background-color-white  ">
+            <div class=" grpd-py-16   grpd-px-16">
+              <div>
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Feedback2/card3.png"
+                  alt="image" class="grpd-object-fit-cover  grpd-width-100" />
+              </div>
+
+              <h4 class="grpd-h4 grpd-pt-16 grpd-text-color-feedback_color_4 grpd-font-weight-600">
+                Developer
+              </h4>
+
+
+              <div>
+                <p
+                  class="grpd-text-color-feedback_color_3 grpd-body1 grpd-mb-0 grpd-text-align-start grpd-fontWeight-300">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis arcu in tincidunt sed imperdiet
+                  etiam
+                </p>
+
+              </div>
+              <div class="grpd-pt-32 ">
+                <a href="#"
+                  class=" btn_secondary grpd-display-flex grpd-justify-content-center grpd-font-weight-600 grpd-border  grpd-py-8 grpd-border-color-feedback_color_1  grpd-text-color-white  ">Buy
+                  Now</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="grpd-col-md-7 grpd-col-lg-4 grpd-col-xs-12  grpd-py-16 grpd-px-16">
+          <div class=" grpd-background-color-white  ">
+            <div class=" grpd-py-16   grpd-px-16">
+              <div>
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Feedback2/card4.png"
+                  alt="image" class="grpd-object-fit-cover  grpd-width-100" />
+              </div>
+
+              <h5 class="grpd-h4 grpd-pt-16 grpd-text-color-feedback_color_4 grpd-font-weight-600">
+                UI/UX Designer
+              </h5>
+
+
+              <div>
+                <p
+                  class="grpd-text-color-feedback_color_3 grpd-body1 grpd-mb-0 grpd-text-align-start grpd-fontWeight-300">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis arcu in tincidunt sed imperdiet
+                  etiam
+                </p>
+
+              </div>
+              <div class="grpd-pt-32 ">
+                <a href="#"
+                  class=" btn_secondary grpd-display-flex grpd-justify-content-center grpd-font-weight-600 grpd-border  grpd-py-8 grpd-border-color-feedback_color_1  grpd-text-color-white  ">Buy
+                  Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grpd-col-md-7 grpd-col-lg-4 grpd-col-xs-12  grpd-py-16 grpd-px-16">
+          <div class=" grpd-background-color-white  ">
+            <div class=" grpd-py-16   grpd-px-16">
+              <div>
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Feedback2/card5.png"
+                  alt="image" class="grpd-object-fit-cover  grpd-width-100" />
+              </div>
+
+              <h4 class="grpd-h4 grpd-pt-16 grpd-text-color-feedback_color_4 grpd-font-weight-600">
+                Graphic Designer
+              </h4>
+              <div>
+                <p
+                  class="grpd-text-color-feedback_color_3 grpd-body1 grpd-mb-0 grpd-text-align-start grpd-fontWeight-300">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis arcu in tincidunt sed imperdiet
+                  etiam
+                </p>
+              </div>
+              <div class="grpd-pt-32 ">
+                <a href="#"
+                  class=" btn_secondary grpd-display-flex grpd-justify-content-center grpd-font-weight-600 grpd-border  grpd-py-8 grpd-border-color-feedback_color_1  grpd-text-color-white  ">Buy
+                  Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grpd-col-md-7 grpd-col-lg-4 grpd-col-xs-12  grpd-py-16 grpd-px-16">
+          <div class=" grpd-background-color-white  ">
+            <div class=" grpd-py-16   grpd-px-16">
+              <div>
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Feedback2/card6.png"
+                  alt="image" class="grpd-object-fit-cover  grpd-width-100" />
+              </div>
+              <h4 class="grpd-h4 grpd-pt-16 grpd-text-color-feedback_color_4 grpd-font-weight-600">
+                Developer
+              </h4>
+              <div>
+                <p
+                  class="grpd-text-color-feedback_color_3 grpd-body1 grpd-mb-0 grpd-text-align-start grpd-fontWeight-300">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis arcu in tincidunt sed imperdiet
+                  etiam
+                </p>
+              </div>
+              <div class="grpd-pt-32 ">
+                <a href="#"
+                  class=" btn_secondary grpd-display-flex grpd-justify-content-center grpd-font-weight-600 grpd-border  grpd-py-8 grpd-border-color-feedback_color_1  grpd-text-color-white  ">Buy
+                  Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section4 -->
+<section class="grpd-wrapper grpd-font-weight-400 font_family_feedback_template_3 grpd-background-color-feedback_color_2 grpd-py-72">
+  <div class="grpd-container-xxl grpd-mx-auto">
+    <div class="grpd-row">
+      <div
+        class="grpd-col-lg-4 grpd-col-md-10 grpd-col-xs-12 grpd-display-flex grpd-justify-content-center grpd-align-items-center">
+        <div>
+          <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Feedback2/profile1.png"
+            class="grpd-width-100 " />
+        </div>
+      </div>
+      <div
+        class="grpd-col-lg-8 grpd-col-md-12 grpd-col-xs-12 grpd-py-20 grpd-px-lg-48 grpd-text-color-white grpd-display-flex grpd-justify-content-center grpd-align-items-center">
+        <div class="">
+          <h3 class="grpd-h3 grpd-text-color-feedback_color_4">
+          Our Learners Feedback
+          </h3>
+          <p class="grpd-font-weight-500 grpd-text-color-feedback_color_4 grpd-py-16">
+        “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id pharetra ex. Mauris fringilla et tellus ac porttitor.
+        Mauris lacinia quam mattis eros porta, id tincidunt ante scelerisque. Quisque nulla lectus, porttitor eget finibus a,
+        molestie nec nunc. Nullam rutrum lacinia nunc vitae commodo. Aliquam eget magna tristique, tempor sapien quis,
+          </p>
+          <h5 class="grpd-h5 grpd-text-color-feedback_color_1">Alex Johnson
+          </h5>
+          <p class="grpd-body1 grpd-text-color-feedback_color_3">CEO, ABC Corporation
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Section5 -->
+<section  class="grpd-wrapper font_family_feedback_template_3 grpd-background-color-feedback_color_2 grpd-py-20 ">
+    <div   class="grpd-container-xxl grpd-border-radius-10 grpd-mx-auto ">
+  <a href="#" class="navbar-brand  ">
+    <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/RealState3/logo.png"
+      class="grpd-width-15" /></a>
+      <div class="grpd-row    grpd-py-20 grpd-px-16  ">
+        <div class="grpd-col-lg-5 grpd-col-md-9 grpd-col-xs-12 grpd-display-flex   grpd-align-items-center">
+       <div class="grpd-col-lg-10 grpd-col-md-10 grpd-col-xs-12">
+          <h2 class=" grpd-h3 ">   
+        Start Your Education Now
+          </h2>
+          <p class="grpd-p grpd-py-20 grpd-font-weight-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at ante efficitur, feugiat mauris id,
+            pellentesque felis.
+          </p>
+  
+              </div>
+        </div>
+        <div class="grpd-col-lg-7 grpd-col-md-12 grpd-display-flex grpd-justify-content-center  grpd-py-32">
+          <form method="POST" idf="99204790154033100" formstate="normal"
+            class="grpd-my-auto  default-card-outline grpd-mx-auto grpd-width-lg-80 grpd-width-xs-100 grpd-px-32 grpd-py-32 grpd-border-radius-10 grpd-background-color-white">
+            <div class="grpd-form-group">
+              <input type="text" name="${FORM_KEYS.name}" placeholder="Name" required
+                class="grpd-form-input-control grpd-border-color-text_tertiary grpd-border grpd-border-radius-4 grpd-font-weight-400" />
+            </div>
+            <div class="grpd-form-group">
+              <input type="email" name="${FORM_KEYS.email}" placeholder="Email" required
+                class="grpd-form-input-control grpd-border-color-text_tertiary grpd-border grpd-border-radius-4 grpd-font-weight-400" />
+            </div>
+            <div class="grpd-form-group">
+              <input type="text" name="${FORM_KEYS.phone}" placeholder="Phone" required
+                class="grpd-form-input-control grpd-border-color-text_tertiary grpd-border grpd-border-radius-4 grpd-font-weight-400" />
+            </div>
+        
+            <div class="grpd-text-align-start">
+              <button role="button" type="submit"
+                class="grpd-width-100 btn_primary grpd-border grpd-border-radius-4 grpd-px-32 grpd-font-weight-600 grpd-py-12">Book Now</button>
+            </div>
+          </form>
+        </div>
+
+     
+
+      </div>
+    </div>
+
+  </section> 
+
+  <!-- footer -->
+<section class="grpd-wrapper grpd-font-weight-400 footer_color font_family_feedback_template_3 grpd-px-32 grpd-py-48">
+  <div class="grpd-container-xxl grpd-mx-auto">
+    <footer>
+      <div class="grpd-row grpd-justify-content-center grpd-align-items-center ">
+        <div class="grpd-col-lg-4 grpd-col-md-12 grpd-col-xs-12 grpd-py-12 grpd-text-align-center">
+          <p class="grpd-body1 grpd-mb-0 grpd-text-color-white">© Copyright 2020 - Grorapid. All rights
+            reserved
+          </p>
+        </div>
+        <div
+          class="grpd-col-lg-4 grpd-col-md-12 grpd-col-xs-12 grpd-py-20 grpd-display-flex grpd-justify-content-center">
+
+        </div>
+        <div
+          class="grpd-col-lg-4 grpd-text-align-center grpd-col-xs-12 grpd-py-12 grpd-col-md-12 grpd-mr-lg-0 grpd-py-xs-16">
+          <div class="grpd-text-align-center ">
+            <a href="#" class="grpd-text-color-white grpd-link-hover-white grpd-p-sm grpd-mx-8"><i
+                class="fab fa-facebook-square">
+              </i></a>
+            <a href="#" class="grpd-text-color-white grpd-link-hover-white grpd-p-sm grpd-mx-8"><i
+                class="fab fa-twitter-square">
+              </i></a>
+            <a href="#" class="grpd-text-color-white grpd-link-hover-white grpd-p-sm grpd-mx-8"><i
+                class="fab fa-instagram">
+              </i></a>
+            <a href="#" class="grpd-text-color-white grpd-link-hover-white grpd-p-sm grpd-mx-8"><i
+                class="fab fa-youtube">
+              </i></a>
+            <a href="#" class="grpd-text-color-white grpd-link-hover-white grpd-p-sm grpd-mx-8"><i
+                class="fab fa-google-plus">
+              </i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</section>
+</body>
+<html>

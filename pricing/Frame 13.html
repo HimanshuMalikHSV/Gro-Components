@@ -139,11 +139,17 @@
             color: #4F8EF7;
         }
 
-        .relative {
+       
+        .icon_ar{
+display: none;
+        }
+        
+   /* media */
+        @media (min-width: 990px) {
+             .relative {
             position: relative;
         }
-
-        .position_icon {
+           .position_icon {
             position: absolute;
             right: -40px;
             top: -1px;
@@ -152,14 +158,9 @@
          .border_left{
             border-left: 1px solid #dee2e6;
         }
-   /* media */
-        @media only screen and (max-width: 990px) {
-            .position_icon{
-                display: none;
-            }
-            .border_left{
-                display: none;
-            }
+        .icon_ar{
+display: block;
+        }
         }
    
     </style>
@@ -180,11 +181,11 @@
 
             <div class="grpd-text-align-center">
                 <span class="text_color1 grpd-mr-12 ">Pay Monthly</span>
-                <span><label class="switch">
+                <label class="switch">
                         <input type="checkbox">
                         <span class="slider round"></span>
                     </label>
-                </span>
+                
                 <span class="text_color1 grpd-ml-12 " grpd-ml-12>Pay Annualy</span>
                 <span
                     class="grpd-body1 grpd-ml-14 bg_color1 grpd-border-radius-48 grpd-font-weight-300 grpd-px-14 grpd-py-4 grpd-border-col grpd-background-color-theme_primary grpd-text-color-white">
@@ -308,8 +309,8 @@
                                     <div>
                                         <h2 class="header_color  grpd-h3-med icon_color">Grorapid Pro</h2>
                                     </div>
-                                    <div class="position_icon">
-                                        <img src="https://grorapidassets.s3.amazonaws.com/images/Pricing/arrow.png" alt="" srcset="">
+                                    <div class="position_icon icon_ar">
+                                       <a href="#"> <img src="https://grorapidassets.s3.amazonaws.com/images/Pricing/arrow.png" alt="arrow" srcset=""></a>
                                     </div>
                                     <span class="header_color grpd-h3">$35 </span><span>/ month</span>
                                     <p class="grpd-p grpd-font-weight-300  grpd-pt-8 pra_color">Use our free plan to get

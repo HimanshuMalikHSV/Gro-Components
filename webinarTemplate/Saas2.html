@@ -1,0 +1,797 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Page title</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="Description">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://rapidtech.s3.amazonaws.com/assets/framework_theme.css" rel="stylesheet">
+  <link href="https://rapidtech.s3.amazonaws.com/assets/framework.css" rel="stylesheet">
+  <link href="https://rapidtech.s3.amazonaws.com/assets/plugin_theme.css" rel="stylesheet">
+  <link href="https://rapidtech.s3.amazonaws.com/assets/framework1.css" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="https://platform-staging.grorapid.com/assets/css/portal/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,700&display=swap"
+    rel="stylesheet">
+
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+    }
+  </style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158951641-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-158951641-2');
+  </script>
+</head>
+
+<body>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .grpd-border-color-white {
+      border-color: white;
+    }
+
+    .grpd-text-color-white {
+      color: white;
+    }
+
+    .grpd-background-color-white {
+      background-color: white;
+    }
+
+    .grpd-border-color-black {
+      border-color: black;
+    }
+
+    .grpd-text-color-black {
+      color: black;
+    }
+
+    .grpd-background-color-black {
+      background-color: black;
+    }
+
+    .grpd-border-color-saas_color_1 {
+      border-color:
+        #7761FB;
+    }
+
+    .grpd-text-color-saas_color_1 {
+      color:
+        #7761FB;
+    }
+
+    .grpd-background-color-saas_color_1 {
+      background-color:
+        #7761FB;
+    }
+
+    .grpd-border-color-saas_color_2 {
+      border-color: #FEF6F2;
+    }
+
+    .grpd-text-color-saas_color_2 {
+      color: #FEF6F2;
+    }
+
+    .grpd-background-color-saas_color_2 {
+      background-color: #FEF6F2;
+    }
+
+    .grpd-border-color-saas_color_3 {
+      border-color:
+        #1A1B1F;
+    }
+
+    .grpd-text-color-saas_color_3 {
+      color:
+        #1A1B1F;
+    }
+
+    .grpd-background-color-saas_color_3 {
+      background-color:
+        #1A1B1F;
+    }
+
+    .grpd-border-color-saas_color_4 {
+      border-color:
+        #1A1B1F;
+    }
+
+    .grpd-text-color-saas_color_4 {
+      color:
+        #1A1B1F;
+    }
+
+    .grpd-background-color-saas_color_4 {
+      background-color:
+        #1A1B1F;
+    }
+
+
+    .font_family_saas_template {
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .grpd-form-input-control {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0.75rem 0.75rem;
+      line-height: 1.5rem;
+      color: rgb(92, 66, 66);
+    }
+
+    .grpd-form-input-control {
+      border: 1px solid #3A3D4E;
+      outline: unset;
+    }
+
+    .grpd-form-input-control:hover,
+    .grpd-form-input-control:focus,
+    .grpd-form-input-control:focus-visible,
+    .grpd-form-input-control:active {
+      border: 1px solid #3A3D4E;
+      outline: unset;
+    }
+.card_bg_hover:hover{
+    background-color: #27282A;
+    transition: 500ms;
+}
+    .border_color {
+      border-color: #B0B0B0;
+    }
+
+    .border_color:hover {
+      border-color: #b0b0b0e7;
+    }
+
+
+    .icon_color {
+      color: #FE6F6F;
+    }
+
+
+
+    .btn_primary {
+      background-color: #7761FB;
+      color: #ffffff;
+      transition: 500ms;
+    }
+
+    .btn_secondary {
+      color: #fe6f6fe5;
+      background-color: #FFFFFF;
+      transition: 500ms;
+    }
+
+    .btn_primary:hover {
+      background-color: #7861fbce;
+      color: #ffffff;
+      transition: 500ms;
+    }
+
+    .btn_secondary:hover {
+      background-color: #ffffff !important;
+      color: #fe6f6ff1;
+      transition: 500ms;
+    }
+
+    .footer_bg_color {
+      background-color: #181D25;
+    }
+
+
+    .bg_color {
+      background-color: #FAFAFA;
+
+    }
+
+    .text {
+      color: #AEC0CE;
+    }
+
+    .bg_color2 {
+      background-color: #141416;
+    }
+
+    .card_bg {
+      background-color: #27282A;
+    }
+
+    .footer_color {
+      background-color:
+        #252525;
+    }
+  </style>
+  <!-- logo section -->
+
+  <!-- Section1 -->
+  <section class="grpd-wrapper font_family_saas_template  grpd-font-weight-400 ">
+    <div class="grpd-container-xxl grpd-py-12 grpd-mx-auto">
+
+      <div class="grpd-row grpd-border-radius-4 grpd-align-items-center  grpd-justify-content-center ">
+
+        <div class="grpd-col-lg-6 grpd-col-md-12 grpd-col-xs-12 grpd-py-32 grpd-display-flex grpd-flex-column ">
+          <div class="grpd-col-lg-8 grpd-col-md-11 grpd-col-xs-12  ">
+            <h2 class="grpd-h2 grpd-text-color-saas_color_4 ">We help you grow your business faster</h2>
+            <p class="grpd-body1  grpd-py-16 grpd-text-color-saas_color_4   ">
+              Outcome-centered products that reduce churn, optimize pricing, and grow your subscription business
+              end-to-end.
+            </p>
+          </div>
+          <div class="grpd-py-16 grpd-row">
+            <a href="#"
+              class=" btn_primary  grpd-px-32 grpd-py-12 grpd-fontWeight-500 grpd-border grpd-border-color-saas_color_1 grpd-background-color-webinar8_color_1 grpd-text-color-white   grpd-mt-10 grpd-mr-lg-16 grpd-mr-xs-0 grpd-mr-xs-16  ">Get
+              Started</a>
+
+          </div>
+        </div>
+        <div
+          class="grpd-col-lg-6 grpd-col-md-12  grpd-col-xs-12 grpd-py-32   grpd-display-flex grpd-align-items-center grpd-justify-content-center ">
+          <div>
+
+            <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/main.png" id="icvbt-2"
+              class="  grpd-width-100 " />
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Section2 -->
+  <section class="grpd-wrapper font_family_saas_template  grpd-font-weight-400 ">
+    <div class="grpd-container-xxl grpd-py-12 grpd-mx-auto">
+      <div class="grpd-text-align-center grpd-py-32">
+        <h4 class="grpd-h4 text grpd-font-weight-700">Powering companies like</h4>
+      </div>
+      <div class="grpd-row grpd-py-8 grpd-align-items-center grpd-justify-content-evenly">
+        <div
+          class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-8 grpd-display-flex grpd-align-items-center grpd-py-lg-48 grpd-py-md-32 grpd-py-24 grpd-px-lg-32 grpd-px-md-20 grpd-px-16">
+          <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/slack.png"
+            class="grpd-width-80" />
+        </div>
+        <div
+          class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-8 grpd-display-flex grpd-align-items-center grpd-py-lg-48 grpd-py-md-32 grpd-py-24 grpd-px-lg-32 grpd-px-md-20 grpd-px-16">
+          <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/Shape.png"
+            class="grpd-width-80" />
+        </div>
+        <div
+          class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-8 grpd-display-flex grpd-align-items-center grpd-py-lg-48 grpd-py-md-32 grpd-py-24 grpd-px-lg-32 grpd-px-md-20 grpd-px-16">
+          <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/google.png"
+            class="grpd-width-80" />
+        </div>
+        <div
+          class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-8 grpd-display-flex grpd-align-items-center grpd-py-lg-48 grpd-py-md-32 grpd-py-24 grpd-px-lg-32 grpd-px-md-20 grpd-px-16">
+          <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/Shape (1).png"
+            class="grpd-width-80" />
+        </div>
+        <div
+          class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-8 grpd-display-flex grpd-align-items-center grpd-py-lg-48 grpd-py-md-32 grpd-py-24 grpd-px-lg-32 grpd-px-md-20 grpd-px-16">
+          <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/Item.png"
+            class="grpd-width-100" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Section3 -->
+  <section class="grpd-wrapper font_family_saas_template  grpd-font-weight-400 ">
+    <div class="grpd-container-xxl grpd-py-12 grpd-mx-auto">
+
+      <div class="grpd-row grpd-border-radius-4 grpd-align-items-center  grpd-justify-content-center ">
+
+        <div
+          class="grpd-col-lg-6 grpd-col-md-12  grpd-col-xs-12 grpd-py-32   grpd-display-flex grpd-align-items-center grpd-justify-content-center ">
+          <div>
+
+            <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/phone.png" id="icvbt-2"
+              class="  grpd-width-100 " />
+
+
+          </div>
+
+        </div>
+        <div
+          class="grpd-col-lg-6 grpd-col-md-12 grpd-col-xs-12 grpd-py-32 grpd-display-flex grpd-flex-column grpd-justify-content-center grpd-align-items-center ">
+          <div class="grpd-col-lg-9 grpd-col-md-11 grpd-col-xs-12  ">
+            <h2 class="grpd-h2 grpd-text-color-saas_color_4 ">Measure Impressions
+              and Reach Post</h2>
+            <p class="grpd-body1  grpd-py-16 grpd-text-color-saas_color_4   ">
+              Graphs displaying your performance for metrics like follower evolution, average engagement rate per post
+              and reach and
+              impressions to give you the insights.
+            </p>
+            <div class="grpd-py-16 grpd-row">
+              <a href="#" class=" grpd-fontWeight-700 grpd-text-color-saas_color_1  ">Learn about graphs &#8594 </a>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- Section4 -->
+  <section class="grpd-wrapper grpd-py-20 font_family_saas_template bg_color grpd-font-weight-400">
+    <div class="grpd-container-xxl grpd-py-48 grpd-mx-auto grpd-background-color-white">
+      <div class="grpd-row  grpd-flex-column-reverse grpd-flex-lg-row">
+        <div
+          class="grpd-col-lg-6 grpd-col-md-10 grpd-col-xs-12 grpd-py-32 grpd-px-lg-72    grpd-display-flex grpd-justify-content-center grpd-flex-column">
+          <h2 class=" grpd-h3 grpd-text-color-course_color_4 ">
+            Schedule Your Post Whenever You Want
+          </h2>
+
+          <p class="grpd-p grpd-text-color-course_color_3 grpd-py-16">
+            Publish your content automatically to ensure that your content reaches the right people. Built-in features
+            such as.</p>
+
+          <div class="grpd-py-16">
+            <div class=" grpd-display-flex grpd-py-4 ">
+              <div class="grpd-display-inline-flex grpd-justify-content-center grpd-align-items-center grpd-mr-16">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/Group.png" alt="girl"
+                  class="grpd-width-100" />
+              </div>
+              <div class="grpd-col-lg-10 grpd-col-md-12 grpd-col-xs-12">
+                <p class="grpd-p grpd-mb-0 grpd-text-color-course_color_3 grpd-font-weight-400">
+                  Best Time to Post
+                </p>
+              </div>
+            </div>
+
+            <div class=" grpd-display-flex grpd-py-4 ">
+              <div class="grpd-display-inline-flex grpd-justify-content-center grpd-align-items-center grpd-mr-16">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/Group.png" alt="girl"
+                  class="grpd-width-100" />
+              </div>
+              <div class="grpd-col-lg-10 grpd-col-md-12 grpd-col-xs-12">
+                <p class="grpd-p grpd-mb-0 grpd-text-color-course_color_3 grpd-font-weight-400">
+                  Geolocation
+                </p>
+              </div>
+            </div>
+            <div class=" grpd-display-flex grpd-py-4 ">
+              <div class="grpd-display-inline-flex grpd-justify-content-center grpd-align-items-center grpd-mr-16">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/Group.png" alt="girl"
+                  class="grpd-width-100" />
+              </div>
+              <div class="grpd-col-lg-10 grpd-col-md-12 grpd-col-xs-12">
+                <p class="grpd-p grpd-mb-0 grpd-text-color-course_color_3 grpd-font-weight-400">
+                  User Tag
+                </p>
+              </div>
+            </div>
+            <div class=" grpd-display-flex grpd-py-4 ">
+              <div class="grpd-display-inline-flex grpd-justify-content-center grpd-align-items-center grpd-mr-16">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/Group.png" alt="girl"
+                  class="grpd-width-100" />
+              </div>
+              <div class="grpd-col-lg-10 grpd-col-md-12 grpd-col-xs-12">
+                <p class="grpd-p grpd-mb-0 grpd-text-color-course_color_3 grpd-font-weight-400">
+                  Others benefit
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="grpd-py-16 grpd-row">
+            <a href="#" class=" grpd-fontWeight-700 grpd-text-color-saas_color_1  ">Learn about scheduled post &#8594
+            </a>
+
+          </div>
+
+        </div>
+        <div class="grpd-col-lg-6 grpd-col-md-12 grpd-display-flex grpd-justify-content-center grpd-mt-18 ">
+
+          <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/macbook.png" alt="girl"
+            class="grpd-width-lg-80 grpd-width-100" />
+        </div>
+      </div>
+  </section>
+  <!-- Section5 -->
+  <section class=" grpd-wrapper font_family_saas_template grpd-py-48 bg_color2">
+    <div class="grpd-container-xxl grpd-mx-auto ">
+      <div class="grpd-row grpd-py-16 grpd-flex-column grpd-justify-content-center grpd-align-items-center  ">
+        <div class="grpd-col-lg-9 grpd-col-md-11 grpd-col-xs-12 grpd-text-color-white grpd-text-align-center">
+          <h2 class=" grpd-h3   ">
+            Simple but powerful
+          </h2>
+
+        </div>
+        <div class="grpd-col-lg-6 grpd-col-md-10 grpd-col-xs-12 grpd-text-align-center">
+          <p class="grpd-p grpd-py-16 grpd-text-color-white grpd-font-weight-300">Outcome-centered products that reduce
+            churn, optimize pricing, and grow your subscription business end-to-end.
+          </p>
+        </div>
+        <div class="grpd-row grpd-mt-24 grpd-justify-content-evenly">
+          <div
+            class="grpd-col-lg-4 grpd-col-md-6 grpd-col-xs-12  grpd-px-lg-36 grpd-py-lg-24 grpd-px-md-48 grpd-py-md-36 grpd-px-16 grpd-py-16">
+            <div
+              class=" grpd-px-lg-32 grpd-py-lg-24 grpd-px-18 grpd-py-16  grpd-text-color-white  default-card-shadow-radius grpd-border-radius-10">
+              <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start ">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/brush.png" alt="image"
+                  class="icon_width" />
+              </div>
+              <h5 class="grpd-h6  grpd-font-weight-600 grpd-pt-16">
+                Feature 1
+              </h5>
+              <p class="grpd-p  grpd-font-weight-400  ">
+                Lorem ipsum dolor sit amet, elit. Convallis arcu in tincidunt sed imperdiet etiam fames
+              </p>
+            </div>
+          </div>
+          <div
+            class="grpd-col-lg-4 grpd-col-md-6 grpd-col-xs-12  grpd-px-lg-36 grpd-py-lg-24 grpd-px-md-48 grpd-py-md-36 grpd-px-16 grpd-py-16">
+            <div
+              class=" grpd-px-lg-32 grpd-py-lg-24 grpd-px-18 grpd-py-16 card_bg_hover  grpd-text-color-white  default-card-shadow-radius grpd-border-radius-10">
+              <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start ">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/pen-tool.png" alt="image"
+                  class="icon_width" />
+              </div>
+              <h5 class="grpd-h6  grpd-font-weight-600 grpd-pt-16">
+                Feature 1
+              </h5>
+              <p class="grpd-p  grpd-font-weight-400  ">
+                Lorem ipsum dolor sit amet, elit. Convallis arcu in tincidunt sed imperdiet etiam fames
+              </p>
+            </div>
+          </div>
+          <div
+            class="grpd-col-lg-4 grpd-col-md-6 grpd-col-xs-12  grpd-px-lg-36 grpd-py-lg-24 grpd-px-md-48 grpd-py-md-36 grpd-px-16 grpd-py-16">
+            <div
+              class=" grpd-px-lg-32 grpd-py-lg-24 grpd-px-18 grpd-py-16  grpd-text-color-white  default-card-shadow-radius grpd-border-radius-10">
+              <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start ">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/text-block.png"
+                  alt="image" class="icon_width" />
+              </div>
+              <h5 class="grpd-h6  grpd-font-weight-600 grpd-pt-16">
+                Feature 1
+              </h5>
+              <p class="grpd-p  grpd-font-weight-400  ">
+                Lorem ipsum dolor sit amet, elit. Convallis arcu in tincidunt sed imperdiet etiam fames
+              </p>
+            </div>
+          </div>
+          <div
+            class="grpd-col-lg-4 grpd-col-md-6 grpd-col-xs-12  grpd-px-lg-36 grpd-py-lg-24 grpd-px-md-48 grpd-py-md-36 grpd-px-16 grpd-py-16">
+            <div
+              class=" grpd-px-lg-32 grpd-py-lg-24 grpd-px-18 grpd-py-16  grpd-text-color-white  default-card-shadow-radius grpd-border-radius-10">
+              <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start ">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/brush.png" alt="image"
+                  class="icon_width" />
+              </div>
+              <h5 class="grpd-h6  grpd-font-weight-600 grpd-pt-16">
+                Feature 1
+              </h5>
+              <p class="grpd-p  grpd-font-weight-400  ">
+                Lorem ipsum dolor sit amet, elit. Convallis arcu in tincidunt sed imperdiet etiam fames
+              </p>
+            </div>
+          </div>
+          <div
+            class="grpd-col-lg-4 grpd-col-md-6 grpd-col-xs-12  grpd-px-lg-36 grpd-py-lg-24 grpd-px-md-48 grpd-py-md-36 grpd-px-16 grpd-py-16">
+            <div
+              class=" grpd-px-lg-32 grpd-py-lg-24 grpd-px-18 grpd-py-16  grpd-text-color-white  default-card-shadow-radius grpd-border-radius-10">
+              <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start ">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/pen-toolw.png"
+                  alt="image" class="icon_width" />
+              </div>
+              <h5 class="grpd-h6  grpd-font-weight-600 grpd-pt-16">
+                Feature 2
+              </h5>
+              <p class="grpd-p  grpd-font-weight-400  ">
+                Lorem ipsum dolor sit amet, elit. Convallis arcu in tincidunt sed imperdiet etiam fames
+              </p>
+            </div>
+          </div>
+          <div
+            class="grpd-col-lg-4 grpd-col-md-6 grpd-col-xs-12  grpd-px-lg-36 grpd-py-lg-24 grpd-px-md-48 grpd-py-md-36 grpd-px-16 grpd-py-16">
+            <div
+              class=" grpd-px-lg-32 grpd-py-lg-24 grpd-px-18 grpd-py-16  grpd-text-color-white  default-card-shadow-radius grpd-border-radius-10">
+              <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start ">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas2/text-block.png"
+                  alt="image" class="icon_width" />
+              </div>
+              <h5 class="grpd-h6  grpd-font-weight-600 grpd-pt-16">
+                Feature 3
+              </h5>
+              <p class="grpd-p  grpd-font-weight-400  ">
+                Lorem ipsum dolor sit amet, elit. Convallis arcu in tincidunt sed imperdiet etiam fames
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Section6 -->
+  <section class=" grpd-wrapper font_family_saas_template grpd-py-48 bg_color2">
+    <div class="grpd-container-xxl grpd-mx-auto ">
+      <div class="grpd-row grpd-py-16 grpd-flex-column grpd-justify-content-center grpd-align-items-center  ">
+        <div class="grpd-col-lg-9 grpd-col-md-11 grpd-col-xs-12 grpd-text-color-white grpd-text-align-center">
+          <h2 class=" grpd-h3   ">
+            Simple pricing, no commitment
+          </h2>
+
+        </div>
+        <div class="grpd-col-lg-6 grpd-col-md-10 grpd-col-xs-12 grpd-text-align-center">
+          <p class="grpd-p grpd-py-16 grpd-text-color-white grpd-font-weight-300">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Convallis arcu in tincidunt sed imperdiet
+          </p>
+        </div>
+      </div>
+      <div class="grpd-row grpd-justify-content-center">
+
+        <div
+          class="grpd-col-lg-4 grpd-col-md-6 grpd-col-xs-12 grpd-py-16 grpd-border-radius-4 grpd-px-lg-48 grpd-px-xs-12">
+          <div
+            class="grpd-box-shadow-3 grpd-background-color-white grpd-border-radius-4 grpd-py-32 grpd-px-32 grpd-border">
+            <h4 class="grpd-h4 grpd-text-color-black">Hobby
+            </h4>
+            <p class="grpd-p ">All the basic for starting a new businesss
+            </p>
+            <div class="grpd-py-20">
+              <h3 class="grpd-h3 grpd-text-color-primary">$12
+                <span class="grpd-p grpd-font-weight-500">/month</span>
+              </h3>
+              <div class="grpd-py-16 grpd-display-flex">
+                <a href="#"
+                  class="btn_primary grpd-text-align-center grpd-border-radius-4 grpd-border btn_hover grpd-font-weight-500 grpd-border-color-text_primary grpd-px-32 grpd-py-12 grpd-width-100">Subscribe
+                  Now</a>
+              </div>
+            </div>
+            <div class="grpd-py-16 ">
+              <p class="grpd-p grpd-font-weight-500 grpd-py-8">What’s included
+              </p>
+              <div class="grpd-py-8">
+                <i aria-hidden="true" class="fa fa-check icon_color">
+                </i>
+                <span class="grpd-pl-4">Unlimited contacts</span>
+              </div>
+              <div class="grpd-py-8">
+                <i aria-hidden="true" class="fa fa-check icon_color">
+                </i>
+                <span class="grpd-pl-4">1000 Emails</span>
+              </div>
+              <div class="grpd-py-8">
+                <i aria-hidden="true" class="fa fa-check icon_color">
+                </i>
+                <span class="grpd-pl-4">1000 Email list cleaning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grpd-col-lg-4 grpd-col-md-6 grpd-col-xs-12 grpd-py-16 grpd-border-radius-4 grpd-px-lg-48 grpd-px-xs-12">
+          <div
+            class="grpd-box-shadow-3 grpd-background-color-white grpd-border-radius-4 grpd-py-32 grpd-px-32 grpd-border">
+            <h4 class="grpd-h4 grpd-text-color-black">Hobby
+            </h4>
+            <p class="grpd-p ">All the basic for starting a new businesss
+            </p>
+            <div class="grpd-py-20">
+              <h3 class="grpd-h3 grpd-text-color-primary">$12
+                <span class="grpd-p grpd-font-weight-500">/month</span>
+              </h3>
+              <div class="grpd-py-16 grpd-display-flex">
+                <a href="#"
+                  class="btn_primary grpd-text-align-center grpd-border-radius-4 grpd-border btn_hover grpd-font-weight-500 grpd-border-color-text_primary grpd-px-32 grpd-py-12 grpd-width-100">Subscribe
+                  Now</a>
+              </div>
+            </div>
+            <div class="grpd-py-16 ">
+              <p class="grpd-p grpd-font-weight-500 grpd-py-8">What’s included
+              </p>
+              <div class="grpd-py-8">
+                <i aria-hidden="true" class="fa fa-check icon_color">
+                </i>
+                <span class="grpd-pl-4">Unlimited contacts</span>
+              </div>
+              <div class="grpd-py-8">
+                <i aria-hidden="true" class="fa fa-check icon_color">
+                </i>
+                <span class="grpd-pl-4">1000 Emails</span>
+              </div>
+              <div class="grpd-py-8">
+                <i aria-hidden="true" class="fa fa-check icon_color">
+                </i>
+                <span class="grpd-pl-4">1000 Email list cleaning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grpd-col-lg-4 grpd-col-md-6 grpd-col-xs-12 grpd-py-16 grpd-border-radius-4 grpd-px-lg-48 grpd-px-xs-12">
+          <div
+            class="grpd-box-shadow-3 grpd-background-color-white grpd-border-radius-4 grpd-py-32 grpd-px-32 grpd-border">
+            <h4 class="grpd-h4 grpd-text-color-black">Hobby
+            </h4>
+            <p class="grpd-p ">All the basic for starting a new businesss
+            </p>
+            <div class="grpd-py-20">
+              <h3 class="grpd-h3 grpd-text-color-primary">$12
+                <span class="grpd-p grpd-font-weight-500">/month</span>
+              </h3>
+              <div class="grpd-py-16 grpd-display-flex">
+                <a href="#"
+                  class="btn_primary grpd-text-align-center grpd-border-radius-4 grpd-border btn_hover grpd-font-weight-500 grpd-border-color-text_primary grpd-px-32 grpd-py-12 grpd-width-100">Subscribe
+                  Now</a>
+              </div>
+            </div>
+            <div class="grpd-py-16 ">
+              <p class="grpd-p grpd-font-weight-500 grpd-py-8">What’s included
+              </p>
+              <div class="grpd-py-8">
+                <i aria-hidden="true" class="fa fa-check icon_color">
+                </i>
+                <span class="grpd-pl-4">Unlimited contacts</span>
+              </div>
+              <div class="grpd-py-8">
+                <i aria-hidden="true" class="fa fa-check icon_color">
+                </i>
+                <span class="grpd-pl-4">1000 Emails</span>
+              </div>
+              <div class="grpd-py-8">
+                <i aria-hidden="true" class="fa fa-check icon_color">
+                </i>
+                <span class="grpd-pl-4">1000 Email list cleaning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+  <!-- Footer -->
+  <section class="grpd-wrapper p_font_family_saas_template grpd-py-lg-100 grpd-py-32 bg_color ">
+    <div class="grpd-container-xxl  grpd-mx-auto grpd-py-48">
+
+      <div class="grpd-row grpd-justify-content-center grpd-text-align-center  grpd-flex-lg-row">
+        <div
+          class="grpd-col-lg-5 grpd-col-md-9 grpd-col-xs-12  grpd-display-flex grpd-justify-content-center grpd-flex-column">
+
+          <h3 class="grpd-h3 grpd-text-color-saas_color_4 grpd-mt-8 grpd-py-16">Sign up for our newsletter
+
+          </h3>
+          <p class="grpd-text-color-saas_color_4 grpd-p grpd-font-weight-300 ">
+            Lorem ipsum dolor sit amet consect adipisicing elit. cupiditate veritatis in accusamus quisquam.
+          </p>
+        </div>
+        <div class="grpd-col-lg-8 grpd-col-md-12 grpd-col-xs-12 grpd-display-flex grpd-align-items-center">
+          <div class="grpd-row grpd-py-16 grpd-flex-column">
+            <form idf="49834714560775900" formstate="normal" class="grpd-justify-content-center grpd-row">
+              <input type="email" name="${FORM_KEYS.email}" required placeholder="Enter"
+                class="grpd-form-input-control grpd-border-radius-4 grpd-mt-8 grpd-border border_color   grpd-font-weight-400 grpd-width-lg-50 grpd-width-md-60 grpd-width-xs-70" />
+              <button role="button" type="submit"
+                class="btn_primary grpd-text-color-white grpd-border-radius-4 grpd-border grpd-border-color-saas_color_1  grpd-ml-12 grpd-mt-8 grpd-px-48 grpd-py-12 grpd-font-weight-500">Notify</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+  </section>
+  <!-- Section9 -->
+  <section class="grpd-wrapper font_family_saas_template  grpd-background-color-black ">
+    <div class="grpd-container-xxl  grpd-mx-auto grpd-pt-48 grpd-py-16">
+      <div class="grpd-row">
+        <div class="grpd-col-lg-12  grpd-col-md-12 grpd-col-xs-12 grpd-display-flex grpd-flex-column">
+          <a href="#" class="navbar-brand ">
+            <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas/logo.png"
+              class="grpd-width-15" /></a>
+        </div>
+        <div class="grpd-col-lg-12 grpd-col-md-12 grpd-mx-auto">
+          <div class="grpd-row grpd-justify-content-between">
+            <div class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-12 grpd-py-16">
+              <div>
+                <h6 class="grpd-h5 grpd-text-color-white  grpd-font-weight-600 ">Company </h6>
+              </div>
+              <div class="grpd-py-2">
+                <a href="#" class="grpd-p grpd-text-color-white grpd-link-hover-white">We are hiring </a>
+              </div>
+              <div class="grpd-py-2">
+                <a href="#" class="grpd-p grpd-text-color-white grpd-link-hover-white">About Us </a>
+              </div>
+            </div>
+            <div class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-12 grpd-py-16">
+              <div>
+                <h6 class="grpd-h5 grpd-text-color-white  grpd-font-weight-600 ">Legal </h6>
+              </div>
+              <div class="grpd-py-2">
+                <a href="#" class="grpd-p grpd-text-color-white grpd-link-hover-white">Terms & Conditions </a>
+              </div>
+              <div class="grpd-py-2">
+                <a href="#" class="grpd-p grpd-text-color-white grpd-link-hover-white">Privacy Policy </a>
+              </div>
+            </div>
+            <div class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-12 grpd-py-16">
+              <div>
+                <h6 class="grpd-h5 grpd-text-color-white  grpd-font-weight-600 ">Knowledge </h6>
+              </div>
+              <div class="grpd-py-2">
+                <a href="#" class="grpd-p grpd-text-color-white grpd-link-hover-white">Blog</a>
+              </div>
+              <div class="grpd-py-2">
+                <a href="#" class="grpd-p grpd-text-color-white grpd-link-hover-white">Help Center </a>
+              </div>
+            </div>
+            <div class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-12 grpd-py-16">
+              <div>
+                <h6 class="grpd-h5 grpd-text-color-white  grpd-font-weight-600 ">Tools</h6>
+              </div>
+              <div class="grpd-py-2">
+                <a href="#" class="grpd-p grpd-text-color-white grpd-link-hover-white">Free Email Cleaning Tool </a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="grpd-row grpd-text-color-white grpd-py-32">
+        <div class="grpd-col-lg-3 grpd-col-md-12">
+          <p class="grpd-body1">© Copyright 2020 - Grorapid. All rights reserved
+          </p>
+        </div>
+        <div class="grpd-col-lg-7  grpd-col-md-12">
+          <div class="grpd-text-align-center grpd-text-color-text_secondary">
+            <a href="#" class="grpd-text-color-white grpd-background-color-saas_color_3 grpd-p-sm grpd-mx-8"><i
+                class="fab fa-instagram">
+              </i></a>
+            <a href="#" class="grpd-text-color-white grpd-background-color-saas_color_3 grpd-p-sm grpd-mx-8"><i
+                class="fab fa-twitter-square">
+              </i></a>
+            <a href="#" class="grpd-text-color-white grpd-background-color-saas_color_3 grpd-p-sm grpd-mx-8"><i
+                class="fab fa-facebook-square">
+              </i></a>
+
+
+
+            <a href="#" class="grpd-text-color-white grpd-background-color-saas_color_3 grpd-p-sm grpd-mx-8"><i
+                class="fab fa-linkedin-in">
+              </i></a>
+
+            </span>
+          </div>
+        </div>
+        <div class="grpd-col-lg-2 grpd-col-md-12">
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<html>

@@ -51,8 +51,6 @@
 </head>
 
 <body>
-
-
   <style>
     * {
       box-sizing: border-box;
@@ -170,6 +168,7 @@
     }
 
     .btn_primary2 {
+      border-color: #021639;
       background-color: #021639;
       color: #FFFFFF;
       transition: 500ms;
@@ -201,11 +200,19 @@
       backdrop-filter: blur(80px);
       border-radius: 16px;
     }
-
+    .card2{
+      background-color: white;
+    }
+    .card2:hover {
+      border: 1px solid #0e0303;
+      box-shadow: 0px 17px 25px rgba(212, 195, 195, 0.08);
+    }
     .text {
       color: #1E1E1E;
     }
-
+    .card:hover {    
+      box-shadow: 0px 17px 25px rgba(96, 96, 96, 0.08);
+    }
     .bg_color {
       background-color: #212121;
     }
@@ -236,7 +243,7 @@
   <section class="grpd-wrapper font_family_development bg_color ">
     <div class="grpd-container-xxl grpd-py-16 grpd-mx-auto">
       <nav class="navbar navbar-expand-lg grpd-row ">
-        <div class="grpd-col-lg-2  grpd-col-xs-9 grpd-col-md-10 ">
+        <div class="grpd-col-lg-3  grpd-col-xs-9 grpd-col-md-10 ">
           <a href="#" class="navbar-brand ">
             <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Saas/logo.png"
               class="grpd-width-15" /></a>
@@ -246,31 +253,32 @@
           class="navbar-toggler"><span class="navbar-toggler-icon grpd-text-color-saas_color_1"><i class="fa fa-bars">
             </i></span></button>
         <div id="navbarTogglerDemo01"
-          class=" grpd-col-lg-2 grpd-col-xs-12 grpd-col-md-12 collapse navbar-collapse grpd-display-flex grpd-justify-content-center grpd-py-lg-0  grpd-py-xs-16">
-          <ul class="navbar-nav    grpd-my-8">
+          class="  collapse navbar-collapse grpd-display-flex grpd-py-lg-0  grpd-py-xs-16">
+          <ul class="navbar-nav   grpd-col-lg-11 grpd-my-8">
             <li class="nav-item grpd-px-lg-8">
-              <a href="#" class="nav-link grpd-link-hover-white grpd-text-color-development_color_2  grpd-font-weight-400 ">Home</a>
+              <a href="#" class="nav-link grpd-link-hover-white grpd-text-color-white  grpd-font-weight-400 ">Home</a>
             </li>
             <li class="nav-item grpd-px-lg-8">
-              <a href="#" class="nav-link grpd-link-hover-white grpd-text-color-development_color_2 grpd-font-weight-400 ">About Us</a>
+              <a href="#" class="nav-link grpd-link-hover-white grpd-text-color-white grpd-font-weight-400 ">About Us</a>
             </li>
             <li class="nav-item grpd-px-lg-8">
-              <a href="#" class="nav-link grpd-link-hover-white grpd-text-color-development_color_2 grpd-font-weight-400 ">Features</a>
+              <a href="#" class="nav-link grpd-link-hover-white grpd-text-color-white grpd-font-weight-400 ">Features</a>
             </li>
             <li class="nav-item grpd-px-lg-8">
-              <a href="#" class="nav-link grpd-link-hover-white grpd-text-color-development_color_2 grpd-font-weight-400 ">Properties</a>
+              <a href="#" class="nav-link grpd-link-hover-white grpd-text-color-white grpd-font-weight-400 ">Properties</a>
             </li>
             <li class="nav-item grpd-px-lg-8">
-              <a href="#" class="nav-link grpd-link-hover-white grpd-text-color-development_color_2 grpd-font-weight-400 ">Testimonial</a>
+              <a href="#" class="nav-link grpd-link-hover-white grpd-text-color-white grpd-font-weight-400 ">Testimonial</a>
             </li>
-
+            
           </ul>
-        </div>
-        <div class=" grpd-py-lg-0 grpd-py-32">
+       
+        <div class=" grpd-py-lg-0 grpd-col-lg-4 grpd-py-32">
           <a href="#"
             class="btn_primary grpd-text-color-black grpd-border-radius-4 grpd-border grpd-border-color-development_color_1  grpd-ml-12 grpd-mt-8 grpd-px-32 grpd-py-12 grpd-font-weight-500">Get
             Started</a>
         </div>
+      </div>
       </nav>
     </div>
   </section>
@@ -283,22 +291,205 @@
           <h2 class="grpd-h1 grpd-text-align-center grpd-py-32">
             Digital Innovation Simplified
           </h2>
-          <p class="grpd-body1 grd-py-20 grpd-text-align-center">
+          <p class="grpd-body1 grd-py-20  grpd-text-align-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur imperdiet at a augue ullamcorper. Leo
             faucibus feugiat rutrum aenean.
           </p>
-          <div class="grpd-py-32  ">
-            <a href="#"
-              class=" btn_primary grpd-border-radius-4 grpd-px-32 grpd-py-14 grpd-fontWeight-500   ">Discover</a>
+          <div class="grp-row grpd-pl-md-32 grpd-pl-lg-32 grpd-py-16">
+            <form idf="49834714560775900" formstate="normal" class="grpd-justify-content-start grpd-row">
+              <input type="text" name="search" placeholder="Enter your email"
+                class="grpd-form-input-control grpd-border-radius-4  grp-mt-8 grpd-border grpd-mr-16  grpd-mt-12  grpd-font-weight-400 grpd-width-lg-60  grpd-width-md-50" />
+              <button role="button" type="submit"
+                class="btn_primary grpd-border grpd-border-radius-4   grpd-width-lg-25 grpd-width-md-35 grpd-width-xs-95 grpd-border-color-development_color_1 grpd-px-20 grpd-py-12 grpd-font-weight-400 grpd-mt-12">Get
+                Started</button>
+            </form>
           </div>
-
         </div>
       </div>
-      <div class="grpd-row grpd-display-flex grpd-justify-content-center grpd-align-items-center">
+      <div class="grpd-row grpd-py-24 grpd-display-flex grpd-justify-content-center grpd-align-items-center">
         <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/image2.png" alt="" srcset="">
+      </div>
+      <div class="grpd-row grpd-py-8 grpd-align-items-center grpd-justify-content-evenly">
+        <div
+          class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-8 grpd-display-flex grpd-align-items-center grpd-py-lg-48 grpd-py-md-32 grpd-py-24 grpd-px-lg-32 grpd-px-md-20 grpd-px-16">
+          <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/d_logo1.png"
+            class="grpd-width-100" />
+        </div>
+        <div
+          class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-8 grpd-display-flex grpd-align-items-center grpd-py-lg-48 grpd-py-md-32 grpd-py-24 grpd-px-lg-32 grpd-px-md-20 grpd-px-16">
+          <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/d_logo2.png"
+            class="grpd-width-100" />
+        </div>
+        <div
+          class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-8 grpd-display-flex grpd-align-items-center grpd-py-lg-48 grpd-py-md-32 grpd-py-24 grpd-px-lg-32 grpd-px-md-20 grpd-px-16">
+          <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/d_logo3.png"
+            class="grpd-width-100" />
+        </div>
+        <div
+          class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-8 grpd-display-flex grpd-align-items-center grpd-py-lg-48 grpd-py-md-32 grpd-py-24 grpd-px-lg-32 grpd-px-md-20 grpd-px-16">
+          <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/d_logo4.png"
+            class="grpd-width-100" />
+        </div>
+        <div
+          class="grpd-col-lg-2 grpd-col-md-6 grpd-col-xs-8 grpd-display-flex grpd-align-items-center grpd-py-lg-48 grpd-py-md-32 grpd-py-24 grpd-px-lg-32 grpd-px-md-20 grpd-px-16">
+          <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/d_logo5.png"
+            class="grpd-width-100" />
+        </div>
+
+
       </div>
     </div>
 
+  </section>
+   <!-- Section2 -->
+   <section class="grpd-wrapper  font_family_development bg_color grpd-py-20 ">
+    <div class="grpd-container-xxl grpd-py-32 grpd-mx-auto">
+      <div class="grpd-row flex-column grpd-align-items-center  ">
+        <div class="grpd-col-lg-7 grpd-col-md-10 grpd-col-xs-12  grpd-text-align-center ">
+          <h5 class="space grpd-text-color-development_color_1 ">
+            CASE STUDY
+          </h5>
+          <h3 class="grpd-h3 grpd-text-color-white grpd-py-20">
+            Glimpses Of Our Work
+          </h3>
+        </div>
+      </div>
+      <div class="grpd-row grpd-justify-content-center grpd-align-items-center ">
+        <div class="grpd-col-lg-4 grpd-col-md-4 grpd-col-xs-12 grpd-py-16 grpd-px-14">
+          <div class="card">
+            <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/card2.png" alt="card" class="grpd-width-100" srcset="">
+          </div>
+        </div>
+        <div class="grpd-col-lg-4 grpd-col-md-4 grpd-col-xs-12 grpd-py-16 grpd-px-14">
+         
+          <div class="card">
+            <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/card1.png" alt="card" class="grpd-width-100" srcset="">
+          </div>
+        </div>
+        <div class="grpd-col-lg-4 grpd-col-md-4 grpd-col-xs-12 grpd-py-16 grpd-px-14">
+        
+          <div class="card">
+            <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/crad3.png" alt="card" class="grpd-width-100" srcset="">
+          </div>
+        </div>
+      </div>
+      <div class="grpd-pt-32 grpd-row  grpd-justify-content-center">
+        <a href="#"
+          class=" btn_primary  grpd-px-32  grpd-border-radius-4 grpd-py-12 grpd-fontWeight-500 grpd-border grpd-border-color-development_color_1     ">
+          Get Started</a>
+      </div>
+    </div>
+  </section>
+  <!-- Section3 -->
+  <section class="grpd-wrapper  font_family_development bg_color3 grpd-py-32 ">
+    <div class="grpd-container-xxl grpd-py-32 grpd-mx-auto">
+      <div class="grpd-row flex-column grpd-align-items-center  ">
+        <div class="grpd-col-lg-5 grpd-col-md-10 grpd-col-xs-12  grpd-text-align-center ">
+          <h5 class="space grpd-text-color-development_color_1 grpd-py-8">
+            TESTIMONIALS
+          </h5>
+          <h3 class="grpd-h3 grpd-text-color-white grpd-py-8">
+            What Our Client says
+          </h3>
+          <p class="grpd-p grpd-text-color-white grpd-py-12">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id pharetra ex. Mauris fringilla et tellus ac
+            porttitor.
+          </p>
+        </div>
+      </div>
+      <div class="grpd-row grpd-justify-content-evenly">
+        <div
+          class="grpd-col-lg-4 grpd-col-md-8 grpd-col-xs-12  grpd-px-lg-36 grpd-py-lg-24 grpd-px-md-48 grpd-py-md-36 grpd-px-16 grpd-py-16">
+          <div class=" card2 grpd-px-lg-28 grpd-py-lg-24 grpd-px-18 grpd-py-16  grpd-border-radius-10">
+            <div class="grpd-display-flex grpd-py-8 grpd-border-bottom">
+              <div class="  ">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Travel Agency/men1.png"
+                  alt="image" class="grpd-border-circle" />
+              </div>
+              <div class="grpd-pl-16">
+                <h6 class=" grpd-font-weight-700 grpd-mb-0 grpd-text-color-development_color_4 grpd-pt-8 ">
+                  Sammy Lawson
+                </h6>
+                <p class="grpd-body1 grpd-text-color-development_color_3">
+                  Creative Director, Amazon
+                </p>
+              </div>
+            </div>
+            <p class="grpd-body1 grpd-font-weight-300 grpd-text-color-development_color_3 grpd-py-10 ">
+              White dwarf a still more glorious dawn awaits tingling of the spine emerged into consciousness Vangelis
+              shores of the cosmic ocean. Tendrils of gossamer clouds kindling the energy hidden in matter concept of
+              the number one permanence.
+            </p>
+            <div class="">
+              <div class="grpd-text-align-end">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Travel Agency/Icon Color.png"
+                  alt="image" class="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grpd-col-lg-4 grpd-col-md-8 grpd-col-xs-12   grpd-px-lg-36 grpd-py-lg-24 grpd-px-md-48 grpd-py-md-36 grpd-px-16 grpd-py-16">
+          <div class=" card2 grpd-px-lg-28 grpd-py-lg-24 grpd-px-18 grpd-py-16  grpd-border-radius-10">
+            <div class="grpd-display-flex grpd-py-8 grpd-border-bottom">
+              <div class="  ">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Travel Agency/men2.png"
+                  alt="image" class="grpd-border-circle" />
+              </div>
+              <div class="grpd-pl-16">
+                <h6 class=" grpd-font-weight-700 grpd-mb-0 grpd-text-color-development_color_4 grpd-pt-8 ">
+                  Azah Anyeni
+                </h6>
+                <p class="grpd-body1 grpd-text-color-development_color_3">
+                  Creative Director, Amazon
+                </p>
+              </div>
+            </div>
+            <p class="grpd-body1 grpd-font-weight-300 grpd-text-color-development_color_3 grpd-py-10 ">
+              White dwarf a still more glorious dawn awaits tingling of the spine emerged into consciousness Vangelis
+              shores of the cosmic ocean. Tendrils of gossamer clouds kindling the energy hidden in matter concept of
+              the number one permanence.
+            </p>
+            <div class="">
+              <div class="grpd-text-align-end">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Travel Agency/Icon Color.png"
+                  alt="image" class="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grpd-col-lg-4 grpd-col-md-8 grpd-col-xs-12  grpd-px-lg-36 grpd-py-lg-24 grpd-px-md-48 grpd-py-md-36 grpd-px-16 grpd-py-16">
+          <div class=" card2 grpd-px-lg-28 grpd-py-lg-24 grpd-px-18 grpd-py-16  grpd-border-radius-10">
+            <div class="grpd-display-flex grpd-py-8 grpd-border-bottom">
+              <div class="  ">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Travel Agency/men3.png"
+                  alt="image" class="grpd-border-circle" />
+              </div>
+              <div class="grpd-pl-16">
+                <h6 class=" grpd-font-weight-700 grpd-mb-0 grpd-text-color-development_color_4 grpd-pt-8 ">
+                  Cecilia Pozo
+                </h6>
+                <p class="grpd-body1 grpd-text-color-development_color_3">
+                  Creative Director, Amazon
+                </p>
+              </div>
+            </div>
+            <p class="grpd-body1 grpd-font-weight-300 grpd-text-color-development_color_3 grpd-py-10 ">
+              White dwarf a still more glorious dawn awaits tingling of the spine emerged into consciousness Vangelis
+              shores of the cosmic ocean. Tendrils of gossamer clouds kindling the energy hidden in matter concept of
+              the number one permanence.
+            </p>
+            <div class="">
+              <div class="grpd-text-align-end">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Travel Agency/Icon Color.png"
+                  alt="image" class="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- Section3 -->
   <section class="grpd-wrapper  font_family_development bg_color  bg_color grpd-py-32 ">
@@ -571,7 +762,7 @@ class="grpd-col-lg-4 grpd-col-md-6 grpd-col-xs-12  grpd-px-lg-36 grpd-py-lg-24 g
               <input type="email" name="${FORM_KEYS.email}" required placeholder="Enter your email"
                 class="grpd-form-input-control grpd-border-radius-4 grpd-mt-8 grpd-border border_color   grpd-font-weight-400 grpd-width-lg-60 grpd-width-md-70" />
               <button role="button" type="submit"
-                class="btn_primary grpd-text-color-white grpd-border-radius-4 grpd-bg-color grpd-border  grpd-mt-8 grpd-px-32 grpd-py-12 grpd-font-weight-500">Subscribe
+                class="btn_primary2 grpd-text-color-white grpd-border-radius-4 grpd-bg-color grpd-border  grpd-mt-8 grpd-px-32 grpd-py-12 grpd-font-weight-500">Subscribe
                 Now</button>
             </form>
             <p class="grpd-p grpd-mt-16 grpd-text-color-white grpd-font-weight-300">We care about the

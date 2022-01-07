@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Page title</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="Description">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://rapidtech.s3.amazonaws.com/assets/framework_theme.css" rel="stylesheet">
+  <link href="https://rapidtech.s3.amazonaws.com/assets/framework.css" rel="stylesheet">
+  <link href="https://rapidtech.s3.amazonaws.com/assets/plugin_theme.css" rel="stylesheet">
+  <link href="https://rapidtech.s3.amazonaws.com/assets/framework1.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="https://platform-staging.grorapid.com/assets/css/portal/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,70;0,200;0,300;0,400;0,500;0,600;1,70&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+    }
+  </style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158951641-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-158951641-2');
+  </script>
+</head>
+
+<body>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .grpd-border-color-black {
+      border-color: black;
+    }
+
+    .grpd-text-color-black {
+      color: black;
+    }
+
+    .grpd-background-color-black {
+      background-color: black;
+    }
+
+    .grpd-border-color-black {
+      border-color: black;
+    }
+
+    .grpd-text-color-black {
+      color: black;
+    }
+
+    .grpd-background-color-black {
+      background-color: black;
+    }
+
+    .grpd-border-color-development_color_1 {
+      border-color: #476EF9;
+    }
+
+    .grpd-text-color-development_color_1 {
+      color: #476EF9;
+    }
+
+    .grpd-background-color-development_color_1 {
+      background-color: #476EF9;
+    }
+
+    .grpd-border-color-development_color_2 {
+      border-color:
+        #F3F3F3;
+    }
+
+    .grpd-text-color-development_color_2 {
+      color:
+        #F3F3F3;
+    }
+
+    .grpd-background-color-development_color_2 {
+      background-color:
+        #F3F3F3;
+    }
+
+    .grpd-border-color-development_color_3 {
+      border-color: #5D6F88;
+    }
+
+    .grpd-text-color-development_color_3 {
+      color: #5D6F88;
+    }
+
+    .grpd-background-color-development_color_3 {
+      background-color: #5D6F88;
+    }
+
+    .grpd-border-color-development_color_4 {
+      border-color: #1E1E1E;
+    }
+
+    .grpd-text-color-development_color_4 {
+      color: #1E1E1E;
+    }
+
+    .grpd-background-color-development_color_4 {
+      background-color: #1E1E1E;
+    }
+
+    .font_family_development {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .grpd-form-input-control {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0.75rem 0.75rem;
+      line-height: 1.5rem;
+      color: black;
+    }
+
+    .grpd-form-input-control:hover,
+    .grpd-form-input-control:focus,
+    .grpd-form-input-control:focus-visible,
+    .grpd-form-input-control:active {
+      border: 1px solid #B0B0B0;
+      outline: unset;
+    }
+
+    .grpd-form-input-control {
+      border: 1px solid #B0B0B0;
+    }
+
+    .btn_primary {
+      background-color: #476EF9;
+      color: #ffffff;
+      transition: 500ms;
+    }
+
+    .btn_primary:hover {
+      background-color: #476df9de;
+      color: #fffffff5;
+      transition: 500ms;
+    }
+
+    .btn_primary2 {
+      background-color: #021639;
+      color: #FFFFFF;
+      transition: 500ms;
+    }
+
+    .btn_primary2:hover {
+      color: #f7f0f0;
+      background-color: #021639e5;
+      transition: 500ms;
+    }
+
+    .btn_secondary {
+      color: #2C52D7;
+      background-color: #EBF9F5;
+      transition: 500ms;
+    }
+
+
+    .btn_secondary:hover {
+      background-color: #EBF9F5;
+      color: #2c51d7c9;
+      transition: 500ms;
+    }
+
+    .text {
+      color: #1E1E1E;
+    }
+
+    .cards {
+      box-shadow: 0px 17px 25px rgba(96, 96, 96, 0.08);
+      background-color: white;
+      flex: 1 0 20em;
+    }
+
+    .cards:hover {
+      box-shadow: none;
+      border: 1px solid #F2F2F2;
+      background-color: white;
+      transform: scale(1.02);
+      transition: .3s;
+    }
+    .icons {
+      box-shadow: 0px 17px 25px rgba(96, 96, 96, 0.08);
+      background-color: white;
+      flex: 1 0 20em;
+    }
+
+
+    .text {
+      color: #1E1E1E;
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+
+    }
+
+    .space {
+      letter-spacing: 3px;
+    }
+
+    .line {
+      display: inline-block;
+    }
+
+    .bg_color2 {
+      background-color: rgb(2, 22, 57);
+    }
+
+    .bg {
+      background-color: #02122E;
+    }
+
+    .hovers img {
+      transition: .3s;
+    }
+
+    .hovers :not(img) {
+      position: absolute;
+      opacity: 0;
+      color: #ffffff;
+      opacity: 1;
+      transition: .3s;
+    }
+
+    .hovers:hover img {
+      filter: brightness(40%);
+      transform: scale(1.02);
+    }
+
+    .hovers:hover :not(img) {
+      opacity: 1;
+    }
+
+    .sliders {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slide_box {
+      height: 200px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      width: auto;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(calc(-300px * 4));
+      }
+    }
+
+    .slide_box .slide_track {
+      animation: scroll 20s linear infinite;
+      display: flex;
+      width: calc(300px * 8);
+    }
+
+    .slide_box .slide {
+      height: 70px;
+      width: 300px;
+    }
+
+    .slide {
+      padding: 30px;
+    }
+
+    .set_img {
+      width: 60px;
+    }
+
+    .bg_color {
+      background-color: rgba(71, 110, 249, 0.02);
+    }
+
+    .wspace {
+      word-spacing: 3px;
+    }
+  </style>
+  <!-- Contact us -->
+    <section class="grpd-wrapper font_family_development  grpd-py-lg-72 grpd-py-24 ">
+      <div class="grpd-container-xxl grpd-py-16 grpd-mx-auto">
+        <div class="grpd-row  grpd-justify-content-center grpd-text-align-center ">
+          <div
+            class="grpd-col-lg-5 grpd-col-md-11 grpd-col-xs-12 grpd-display-flex grpd-flex-column grpd-align-items-center ">
+            <h5 class="space grpd-text-color-development_color_1 grpd-py-8 grpd-font-weight-600">
+              CONTACT US
+            </h5>
+            <h3 class=" wspace grpd-h3 grpd-text-color-development_color_4 grpd-py-10">Let’s work together
+            </h3>
+            <p class="grpd-p  grpd-text-color-development_color_3 grpd-py-10 ">We are excited to take on your new project and help you build something amazing!</p>
+          </div>
+      </div>
+      <div class="grpd-row grpd-justify-content-center grpd-py-40  ">
+        <div class="grpd-col-lg-8 grpd-col-md-6 grpd-col-xs-12">
+          <div class="flex">
+            <div
+              class=" cards  grpd-px-32 grpd-py-32  grpd-border-radius-10">
+              <div class="">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/mail.png" class="grpd-width-10"  alt="icon">
+              </div>
+              <div class="">
+                <h5 class=" grpd-pt-24 grpd-text-color-development_color_4 grpd-font-weight-600">Mail us</h5>
+                <p class="grpd-p grpd-text-color-development_color_3 grpd-py-10">hello@grorapid.com </p>
+              </div>
+            </div>
+            <div
+              class=" cards  grpd-px-32 grpd-py-32  grpd-border-radius-10">
+              <div class="">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/call.png" class="grpd-width-10"  alt="icon">
+              </div>
+              <div class="">
+                <h5 class=" grpd-pt-24 grpd-text-color-development_color_4 grpd-font-weight-600">Office Phone</h5>
+                <p class="grpd-p grpd-text-color-development_color_3 grpd-py-10">India: (+91) 870 024 4081, (+91) 870 024 4081 </p>
+              </div>
+            </div>
+            <div
+              class=" cards  grpd-px-32 grpd-py-32  grpd-border-radius-10">
+              <div class="">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/map.png" class="grpd-width-10"  alt="icon">
+              </div>
+              <div class="">
+                <h5 class=" grpd-pt-24 grpd-text-color-development_color_4 grpd-font-weight-600">Office Address</h5>
+                <p class="grpd-p grpd-text-color-development_color_3 grpd-pt-10">Plot No. 115, Sector 44, Gurgaon, Haryana - 122002 </p>
+                <a href="a" target="_blank" rel="noopener noreferrer"><u>View map location</u></a>
+              </div>
+            </div>
+            <div
+              class=" cards  grpd-px-32 grpd-py-32  grpd-border-radius-10">
+              <div class="">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/call.png" class="grpd-width-10"  alt="icon">
+              </div>
+              <div class="">
+                <h5 class=" grpd-pt-24 grpd-text-color-development_color_4 grpd-font-weight-600">Office Phone</h5>
+                <p class="grpd-p grpd-text-color-development_color_3 grpd-py-10">India: (+91) 870 024 4081, (+91) 870 024 4081 </p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- <div class="grpd-row grpd-justify-content-center">
+          <div class="grpd-col-lg-6 grpd-col-md-6 grpd-col-xs-12 grpd-py-20 grpd-px-20">
+            <div class="cards grpd-display-flex grpd-flex-column  grpd-py-32 grpd-px-32 grpd-border-radius-10">
+              <div class="">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/mail.png" class="grpd-width-10"  alt="icon">
+              </div>
+              <div class="">
+                <h5 class=" grpd-pt-24 grpd-text-color-development_color_4">Mail us</h5>
+                <p class="grpd-p grpd-text-color-development_color_3 grpd-py-10">hello@grorapid.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="grpd-col-lg-6 grpd-col-md-6 grpd-col-xs-12 grpd-py-20 grpd-px-20">
+            <div class="cards grpd-display-flex grpd-flex-column  grpd-py-32 grpd-px-32 grpd-border-radius-10">
+              <div class="">
+                <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/call.png" class="grpd-width-10"  alt="icon">
+              </div>
+              <div class="">
+                <h5 class=" grpd-pt-24 grpd-text-color-development_color_4">Office Phone</h5>
+                <p class="grpd-p grpd-text-color-development_color_3 grpd-py-10">India: (+91) 870 024 4081, (+91) 870 024 4081 </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        </div>
+      </div>
+      </div>
+    </section>
+  <!-- logo section -->
+  <!-- <section class="grpd-wrapper font_family_development bg_color grpd-py-lg-72 grpd-py-23 ">
+    <div class="grpd-container-xxl grpd-py-lg-0 grpd-py-16 grpd-mx-auto">
+      <div class="grpd-row  grpd-justify-content-center grpd-text-align-center ">
+        <div
+          class="grpd-col-lg-7 grpd-col-md-11 grpd-col-xs-12 grpd-display-flex grpd-flex-column grpd-align-items-center ">
+          <h5 class="space grpd-text-color-development_color_1 grpd-py-8 grpd-font-weight-600">
+            SERVICES
+          </h5>
+          <h3 class=" wspace grpd-h3 grpd-text-color-development_color_4 grpd-py-10">What We do for you
+          </h3>
+          <p class="grpd-p  grpd-text-color-development_color_3 grpd-py-16 ">We are building application from past 8+
+            years for web and mobile. Building MVPs using No-code tools or creating a beautiful and scalable mobile
+            application, we got the talent, energy and world class support at your fingertips with just one goal i.e
+            making you and your business successful.</p>
+        </div>
+
+
+      </div>
+    </div>
+  </section> -->
+  <!-- section2 -->
+  <!-- <section class="grpd-wrapper  font_family_development  grpd-py-40 ">
+    <div class="grpd-container-xxl grpd-py-32 grpd-mx-auto">
+      <div class="grpd-row grpd-justify-content-center grpd-align-items-center ">
+        <div class="grpd-col-lg-11 grpd-col-md-12">
+          <div class="grpd-row grpd-justify-content-center grpd-align-items-center">
+         <div class="grpd-col-lg-5 grpd-col-md-12 grpd-col-xs-12    grpd-px-24 grpd-py-24">
+          <div class="   ">
+            <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start">
+              <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Development/mobile-app.png"
+                alt="image" class="set_img" />
+            </div>
+            <div class="">
+              <h4 class="grpd-h4 grpd-font-weight-700  grpd-text-color-development_color_4 grpd-pt-16">
+                Mobile app development
+              </h4>
+              <p class="grpd-p grpd-font-weight-400 grpd-text-color-development_color_3 grpd-py-10 ">
+                We are building application from past 8+ years for web and mobile. Building MVPs using No-code tools or
+                creating a beautiful and scalable mobile application, we got the talent, energy and world class support
+                at your fingertips with just one goal i.e making you and your business successful.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grpd-col-lg-3 grpd-col-md-12 grpd-col-xs-12">
+
+        </div>
+        <div class="grpd-col-lg-4 grpd-col-md-12 grpd-col-xs-12    grpd-px-24 grpd-py-24">
+          <div class="grpd-display-flex grpd-flex-column gr grpd-py-20 ">
+            <div class="">
+            
+              <div class="grpd-pb-16">
+                <h6 class="grpd-text-color-development_color_3 grpd-font-weight-600">
+                  Native Apps
+                </h6>
+                <div class="grpd-row grpd-justify-content-start">
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons grpd-display-flex grpd-align-items-center grpd-justify-content-center  grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/android.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4  grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/apple.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grpd-pb-16">
+                <h6 class="grpd-text-color-development_color_3 grpd-font-weight-600">
+                  Hybrid Apps
+                </h6>
+                <div class="grpd-row grpd-justify-content-start">
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4  grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/pwa.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4   grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/cricle.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4   grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/react.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4   grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/flutter.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>     
+      </div>
+    </div>
+  </section>
+  <section class="grpd-wrapper  font_family_development bg_color grpd-py-40 ">
+    <div class="grpd-container-xxl grpd-py-32 grpd-mx-auto">
+      <div class="grpd-row grpd-justify-content-center grpd-align-items-center ">
+        <div class="grpd-col-lg-11 grpd-col-md-12">
+          <div class="grpd-row grpd-justify-content-center grpd-align-items-center grpd-flex-lg-row grpd-flex-column-reverse">
+         
+        <div class="grpd-col-lg-4 grpd-col-md-12 grpd-col-xs-12    grpd-px-24 grpd-py-24">
+          <div class="grpd-display-flex grpd-flex-column gr grpd-py-20 ">
+            <div class="">
+            
+              <div class="grpd-pb-16">
+                <h6 class="grpd-text-color-development_color_3 grpd-font-weight-600">
+                  Native Apps
+                </h6>
+                <div class="grpd-row grpd-justify-content-start">
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/android.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/apple.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grpd-pb-16">
+                <h6 class="grpd-text-color-development_color_3 grpd-font-weight-600">
+                  Hybrid Apps
+                </h6>
+                <div class="grpd-row grpd-justify-content-start">
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/pwa.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/cricle.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/react.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/flutter.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grpd-col-lg-3 grpd-col-md-12 grpd-col-xs-12">
+
+        </div>
+        <div class="grpd-col-lg-5 grpd-col-md-12 grpd-col-xs-12    grpd-px-24 grpd-py-24">
+          <div class="   ">
+            <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start">
+              <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Development/no-code.png"
+                alt="image" class="set_img" />
+            </div>
+            <div class="">
+              <h4 class="grpd-h4 grpd-font-weight-700  grpd-text-color-development_color_4 grpd-pt-16">
+                Automation tasks and Integration
+              </h4>
+              <p class="grpd-p grpd-font-weight-400 grpd-text-color-development_color_3 grpd-py-10 ">
+                We are building application from past 8+ years for web and mobile. Building MVPs using No-code tools or
+                creating a beautiful and scalable mobile application, we got the talent, energy and world class support
+                at your fingertips with just one goal i.e making you and your business successful.
+              </p>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>     
+      </div>
+    </div>
+  </section>
+  <section class="grpd-wrapper  font_family_development  grpd-py-40 ">
+    <div class="grpd-container-xxl grpd-py-32 grpd-mx-auto">
+      <div class="grpd-row grpd-justify-content-center grpd-align-items-center ">
+        <div class="grpd-col-lg-11 grpd-col-md-12">
+          <div class="grpd-row grpd-justify-content-center grpd-align-items-center">
+         <div class="grpd-col-lg-5 grpd-col-md-12 grpd-col-xs-12    grpd-px-24 grpd-py-24">
+          <div class="   ">
+            <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start">
+              <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Development/monitor.png"
+                alt="image" class="set_img" />
+            </div>
+            <div class="">
+              <h4 class="grpd-h4 grpd-font-weight-700  grpd-text-color-development_color_4 grpd-pt-16">
+                Web app Devlopment
+              </h4>
+              <p class="grpd-p grpd-font-weight-400 grpd-text-color-development_color_3 grpd-py-10 ">
+                We are building application from past 8+ years for web and mobile. Building MVPs using No-code tools or
+                creating a beautiful and scalable mobile application, we got the talent, energy and world class support
+                at your fingertips with just one goal i.e making you and your business successful.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grpd-col-lg-3 grpd-col-md-12 grpd-col-xs-12">
+
+        </div>
+        <div class="grpd-col-lg-4 grpd-col-md-12 grpd-col-xs-12    grpd-px-24 grpd-py-24">
+          <div class="grpd-display-flex grpd-flex-column gr grpd-py-20 ">
+            <div class="">
+            
+              <div class="grpd-pb-16">
+                <h6 class="grpd-text-color-development_color_3 grpd-font-weight-600">
+                  Native Apps
+                </h6>
+                <div class="grpd-row grpd-justify-content-start">
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/android.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/apple.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grpd-pb-16">
+                <h6 class="grpd-text-color-development_color_3 grpd-font-weight-600">
+                  Hybrid Apps
+                </h6>
+                <div class="grpd-row grpd-justify-content-start">
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/pwa.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/cricle.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/react.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/flutter.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>     
+      </div>
+    </div>
+  </section>
+  <section class="grpd-wrapper  font_family_development bg_color grpd-py-40 ">
+    <div class="grpd-container-xxl grpd-py-32 grpd-mx-auto">
+      <div class="grpd-row grpd-justify-content-center grpd-align-items-center grpd-flex-lg-row grpd-flex-column-reverse ">
+        <div class="grpd-col-lg-11 grpd-col-md-12">
+          <div class="grpd-row grpd-justify-content-center grpd-align-items-center">
+         
+        <div class="grpd-col-lg-4 grpd-col-md-12 grpd-col-xs-12    grpd-px-24 grpd-py-24">
+          <div class="grpd-display-flex grpd-flex-column gr grpd-py-20 ">
+            <div class="">
+            
+              <div class="grpd-pb-16">
+                <h6 class="grpd-text-color-development_color_3 grpd-font-weight-600">
+                  Native Apps
+                </h6>
+                <div class="grpd-row grpd-justify-content-start">
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/android.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/apple.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grpd-pb-16">
+                <h6 class="grpd-text-color-development_color_3 grpd-font-weight-600">
+                  Hybrid Apps
+                </h6>
+                <div class="grpd-row grpd-justify-content-start">
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/pwa.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/cricle.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/react.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/flutter.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grpd-col-lg-3 grpd-col-md-12 grpd-col-xs-12">
+
+        </div>
+        <div class="grpd-col-lg-5 grpd-col-md-12 grpd-col-xs-12    grpd-px-24 grpd-py-24">
+          <div class="   ">
+            <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start">
+              <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Development/pencil-and-ruler.png"
+                alt="image" class="set_img" />
+            </div>
+            <div class="">
+              <h4 class="grpd-h4 grpd-font-weight-700  grpd-text-color-development_color_4 grpd-pt-16">
+                UI/UX Design
+              </h4>
+              <p class="grpd-p grpd-font-weight-400 grpd-text-color-development_color_3 grpd-py-10 ">
+                We are building application from past 8+ years for web and mobile. Building MVPs using No-code tools or
+                creating a beautiful and scalable mobile application, we got the talent, energy and world class support
+                at your fingertips with just one goal i.e making you and your business successful.
+              </p>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>     
+      </div>
+    </div>
+  </section>
+  <section class="grpd-wrapper  font_family_development  grpd-py-40 ">
+    <div class="grpd-container-xxl grpd-py-32 grpd-mx-auto">
+      <div class="grpd-row grpd-justify-content-center grpd-align-items-center ">
+        <div class="grpd-col-lg-11 grpd-col-md-12">
+          <div class="grpd-row grpd-justify-content-center grpd-align-items-center">
+         <div class="grpd-col-lg-5 grpd-col-md-12 grpd-col-xs-12    grpd-px-24 grpd-py-24">
+          <div class="   ">
+            <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start">
+              <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Development/automation.png"
+                alt="image" class="set_img" />
+            </div>
+            <div class="">
+              <h4 class="grpd-h4 grpd-font-weight-700  grpd-text-color-development_color_4 grpd-pt-16">
+                Automation tasks and Integration
+              </h4>
+              <p class="grpd-p grpd-font-weight-400 grpd-text-color-development_color_3 grpd-py-10 ">
+                We are building application from past 8+ years for web and mobile. Building MVPs using No-code tools or
+                creating a beautiful and scalable mobile application, we got the talent, energy and world class support
+                at your fingertips with just one goal i.e making you and your business successful.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grpd-col-lg-3 grpd-col-md-12 grpd-col-xs-12">
+
+        </div>
+        <div class="grpd-col-lg-4 grpd-col-md-12 grpd-col-xs-12    grpd-px-24 grpd-py-24">
+          <div class="grpd-display-flex grpd-flex-column gr grpd-py-20 ">
+            <div class="">
+            
+              <div class="grpd-pb-16">
+                <h6 class="grpd-text-color-development_color_3 grpd-font-weight-600">
+                  Native Apps
+                </h6>
+                <div class="grpd-row grpd-justify-content-start">
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/android.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/apple.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grpd-pb-16">
+                <h6 class="grpd-text-color-development_color_3 grpd-font-weight-600">
+                  Hybrid Apps
+                </h6>
+                <div class="grpd-row grpd-justify-content-start">
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/pwa.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/cricle.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/react.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/flutter.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>     
+      </div>
+    </div>
+  </section>
+  <section class="grpd-wrapper  font_family_development bg_color grpd-py-40 ">
+    <div class="grpd-container-xxl grpd-py-32 grpd-mx-auto">
+      <div class="grpd-row grpd-justify-content-center grpd-align-items-center ">
+        <div class="grpd-col-lg-11 grpd-col-md-12">
+          <div class="grpd-row grpd-justify-content-center grpd-flex-lg-row grpd-flex-column-reverse grpd-align-items-center">
+         
+        <div class="grpd-col-lg-4 grpd-col-md-12 grpd-col-xs-12    grpd-px-24 grpd-py-24">
+          <div class="grpd-display-flex grpd-flex-column gr grpd-py-20 ">
+            <div class="">
+            
+              <div class="grpd-pb-16">
+                <h6 class="grpd-text-color-development_color_3 grpd-font-weight-600">
+                  Native Apps
+                </h6>
+                <div class="grpd-row grpd-justify-content-start">
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/android.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/apple.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grpd-pb-16">
+                <h6 class="grpd-text-color-development_color_3 grpd-font-weight-600">
+                  Hybrid Apps
+                </h6>
+                <div class="grpd-row grpd-justify-content-start">
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/pwa.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/cricle.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/react.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                  <div class="grod-col-lg-4 grod-col-md-4 grpd-col-xs-4 grpd-py-12 grpd-pr-20">
+                    <div class="icons   grpd-display-flex grpd-align-items-center grpd-justify-content-center grpd-border-radius-10 ">
+                      <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/V2/flutter.png"
+                      alt="image" class="set_img grpd-py-10 grpd-px-10" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grpd-col-lg-3 grpd-col-md-12 grpd-col-xs-12">
+
+        </div>
+        <div class="grpd-col-lg-5 grpd-col-md-12 grpd-col-xs-12  grpd-px-24 grpd-py-24">
+          <div class="   ">
+            <div class="  grpd-display-flex grpd-py-16  grpd-justify-content-start">
+              <img src="https://grorapidassets.s3.amazonaws.com/images/webinartemplate/Development/maintenance.png"
+                alt="image" class="set_img" />
+            </div>
+            <div class="">
+              <h4 class="grpd-h4 grpd-font-weight-700  grpd-text-color-development_color_4 grpd-pt-16">
+                UI/UX Design
+              </h4>
+              <p class="grpd-p grpd-font-weight-400 grpd-text-color-development_color_3 grpd-py-10 ">
+                We are building application from past 8+ years for web and mobile. Building MVPs using No-code tools or
+                creating a beautiful and scalable mobile application, we got the talent, energy and world class support
+                at your fingertips with just one goal i.e making you and your business successful.
+              </p>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>     
+      </div>
+    </div>
+  </section> -->
+  <!-- Section3 -->
+  <!-- <section class="grpd-wrapper font_family_development  grpd-py-lg-100 grpd-py-32 ">
+    <div class="grpd-container-xxl grpd-py-20 grpd-mx-auto">
+      <div class="grpd-row grpd-justify-content-center ">
+        <div
+          class="grpd-col-lg-6 grpd-col-md-10 grpd-col-xs-12 grpd-display-flex grpd-flex-column grpd-justify-content-center grpd-align-items-center ">
+          <h3
+            class="grpd-h2 grpd-text-color-development_color_4 grpd-text-align-center grpd-py-32">
+            Let’s get you Shortlisted to the top!
+          </h3>
+          <p class="grpd-p grpd-text-color-development_color_3 grd-py-20 grpd-text-align-center">
+            We help boost revenues for businesses like yours through proven strategies that will turn your website into a lead-attracting, profit-generating machine..
+          </p>
+          <div class="grpd-py-32  ">
+            <a href="#"
+              class=" btn_primary  grpd-px-32 grpd-border-radius-4 grpd-py-14 grpd-fontWeight-500 ">Get Started</a>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section> -->
+</body>
+<html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Page title</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Description">
+    <link href="https://rapidtech.s3.amazonaws.com/assets/framework_theme.css" rel="stylesheet">
+
+    <link href="https://rapidtech.s3.amazonaws.com/assets/plugin_theme.css" rel="stylesheet">
+    <link href="https://rapidtech.s3.amazonaws.com/assets/framework1.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://platform-staging.grorapid.com/assets/css/portal/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <Style>
+        .grpd-button-Primary {
+            color: #fff;
+            background-color: #1266f1;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 500ms;
+            padding: 10px 20px;
+            border: 1px solid #1266f1;
+        }
+
+        .grpd-button-Primary:hover {
+            color: #fff;
+            background-color: #0e51bd;
+        }
+
+        .grpd-button-Secondary {
+            color: #fff;
+            background-color: #6c757d;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 500ms;
+            padding: 10px 20px;
+            border: 1px solid #6c757d;
+        }
+
+        .grpd-button-Secondary:hover {
+            color: #fff;
+            background-color: #5a6772;
+            border-color: #5a6772;
+
+        }
+
+        .grpd-button-Success {
+            color: #fff;
+            background-color: #218838;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 500ms;
+            padding: 10px 20px;
+            border: 1px solid #218838;
+        }
+
+        .grpd-button-Success:hover {
+            color: #fff;
+            background-color: #1e7732;
+
+        }
+
+        .grpd-button-Danger {
+            color: #fff;
+            background-color: #dc3545;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 500ms;
+            padding: 10px 20px;
+            border: 1px solid #dc3545;
+        }
+
+        .grpd-button-Danger:hover {
+            color: #fff;
+            background-color: #c5303e;
+
+        }
+
+        .grpd-button-Warning {
+            color: #212529;
+            background-color: #e0a800;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 500ms;
+            padding: 10px 20px;
+            border: 1px solid #e0a800;
+        }
+
+        .grpd-button-Warning:hover {
+            color: #212529;
+            background-color: #cc9901;
+
+        }
+
+        .grpd-button-Info {
+            color: #fff;
+            background-color: #17a2b8;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 500ms;
+            padding: 10px 20px;
+            border: 1px solid #17a2b8;
+        }
+
+        .grpd-button-Info:hover {
+            color: #fff;
+            background-color: #168fa1;
+
+        }
+
+        .grpd-button-Light {
+            color: #212529;
+            background-color: #fff;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 500ms;
+            padding: 10px 20px;
+            border: 1px solid #fff;
+        }
+
+        .grpd-button-Light:hover {
+            color: #212529;
+            background-color: #d1d5d8;
+
+        }
+
+        .grpd-button-Dark {
+            color: #fff;
+            background-color: #343a40;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 500ms;
+            padding: 10px 20px;
+            border: 1px solid #343a40;
+        }
+
+        .grpd-button-Dark:hover {
+            color: #fff;
+            background-color: #2a3036;
+        }
+
+        .grpd-button-Link {
+            font-weight: 400;
+            color: #007bff;
+            background-color: transparent;
+            text-decoration: none;
+            transition: 500ms;
+            padding: 10px 20px;
+        }
+        .grpd-button-Link:hover {
+            text-decoration: underline;
+            color: #0572e6ad;
+        }
+
+        .grpd-button-Outline-Primary {
+            color: #007bff;
+            background: transparent;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 500ms;
+            padding: 10px 20px;
+            border: 1px solid #007bff;
+        }
+
+        .grpd-button-Outline-Primary:hover {
+            color: #fff;
+            background-color: #007bff;
+
+        }
+
+        .grpd-button-Outline-Secondary {
+            color: #6c757d;
+            font-size: 16px;
+            background: transparent;
+            text-decoration: none;
+            transition: 500ms;
+            padding: 10px 20px;
+            border: 1px solid #6c757d;
+        }
+
+        .grpd-button-Outline-Secondary:hover {
+            color: #fff;
+            background-color: #6c757d;
+
+        }
+
+        .grpd-button-Outline-Success {
+            color: #28a745;
+            font-size: 16px;
+            background: transparent;
+            text-decoration: none;
+            transition: 500ms;
+            padding: 10px 20px;
+            border: 1px solid #28a745;
+        }
+
+        .grpd-button-Outline-Success:hover {
+            color: #fff;
+            background-color: #28a745;
+
+        }
+
+        .grpd-button-Outline-Danger {
+            color: #dc3545;
+            font-size: 16px;
+            background: transparent;
+            text-decoration: none;
+            transition: 500ms;
+            padding: 10px 20px;
+            border: 1px solid #dc3545;
+        }
+
+        .grpd-button-Outline-Danger:hover {
+            color: #fff;
+            background-color: #dc3545;
+
+        }
+
+        .grpd-button-Outline-Warning {
+            color: #ffc107;
+            font-size: 16px;
+            background: transparent;
+            text-decoration: none;
+            transition: 500ms;
+            padding: 10px 20px;
+            border: 1px solid #ffc107;
+        }
+
+        .grpd-button-Outline-Warning:hover {
+            color: #212529;
+            background-color: #ffc107;
+
+        }
+
+        .grpd-button-Outline-Info {
+            color: #17a2b8;
+            font-size: 16px;
+            transition: 500ms;
+            background: transparent;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #17a2b8;
+        }
+
+        .grpd-button-Outline-Info:hover {
+            color: #fff;
+            background-color: #17a2b8;
+
+        }
+
+        .grpd-button-Outline-Dark {
+            color: #343a40;
+            font-size: 16px;
+            background: transparent;
+            text-decoration: none;
+            transition: 500ms;
+            padding: 10px 20px;
+            border: 1px solid #343a40;
+        }
+
+        .grpd-button-Outline-Dark:hover {
+            color: #fff;
+            background-color: #343a40;
+
+        }
+    </Style>
+    <div class="">
+        <section class="">
+            <a href="#" class="grpd-button-secondary-theme_primary grpd-button-Dark " target="_blank" rel="noopener noreferrer">link</a>
+            <button type="" class="   grpd-button-Primary ">Primary</button>
+            <button type="button" class="   grpd-button-Secondary  ">Secondary</button>
+            <button type="button" class="   grpd-button-Success">Success</button>
+            <button type="button" class="   grpd-button-Danger">Danger</button>
+            <button type="button" class="   grpd-button-Warning">Warning</button>
+            <button type="button" class="   grpd-button-Info">Info</button>
+            <button type="button" class="   grpd-button-Light">Light</button>
+            <button type="button" class="   grpd-button-Dark">Dark</button>
+            <button type="button" class="   grpd-button-Link">Link</button>
+
+        </section>
+
+    </div>
+    <div class="grpd-py-32  ">
+        <section>
+            <button type="button" class=" grpd-button-Outline-Primary">Primary</button>
+            <button type="button" class=" grpd-button-Outline-Secondary">Secondary</button>
+            <button type="button" class=" grpd-button-Outline-Success">Success</button>
+            <button type="button" class=" grpd-button-Outline-Danger">Danger</button>
+            <button type="button" class=" grpd-button-Outline-Warning">Warning</button>
+            <button type="button" class=" grpd-button-Outline-Info">Info</button>
+            <button type="button" class=" grpd-button-Outline-Dark">Dark</button>
+        </section>
+    </div>
+    <div class="grpd-border-radius-56 grpd-border grpd-py-10 grpd-px-32"></div>
+
+
+</body>
+
+</html>
